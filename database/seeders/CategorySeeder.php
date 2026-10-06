@@ -17,25 +17,25 @@ class CategorySeeder extends Seeder
                 'name' => 'Dryers & Dehydrators',
                 'description' => 'Industrial drying and dehydration solutions for food, pharmaceutical, and chemical processing applications.',
                 'sort_order' => 1,
-                'image' => 'cat_freeze_dryers_1783126120106.png',
+                'image' => 'ftd_24_tray_dryer.png',
             ],
             [
                 'name' => 'Process Equipment',
                 'description' => 'Specialized processing machinery for fruits, vegetables, grains, meat, seafood, and agricultural products.',
                 'sort_order' => 2,
-                'image' => 'cat_food_processing_1783126130193.png',
+                'image' => 'complete_dehydration_process_line.png',
             ],
             [
                 'name' => 'Cold Chain Solutions',
                 'description' => 'End-to-end cold storage, refrigeration systems, and controlled environment chambers for diverse industries.',
                 'sort_order' => 3,
-                'image' => 'cat_cold_storage_1783126148402.png',
+                'image' => 'lab_refrigerator_deep_freezer_side.png',
             ],
             [
                 'name' => 'Ancillary Equipment',
                 'description' => 'Supporting industrial machinery including slicers, pulverisers, cutters, sifters, blenders, and packaging equipment.',
                 'sort_order' => 4,
-                'image' => 'cat_processing_equip_1783126158752.png',
+                'image' => 'automatic_pulverizer.png',
             ],
         ];
 
@@ -52,7 +52,9 @@ class CategorySeeder extends Seeder
             );
 
             if ($image && File::exists(public_path('img/'.$image))) {
-                if ($model->getMedia('images')->isEmpty()) {
+                $currentMedia = $model->getFirstMedia('images');
+                if (! $currentMedia || $currentMedia->file_name !== $image) {
+                    $model->clearMediaCollection('images');
                     $model->addMedia(public_path('img/'.$image))
                         ->preservingOriginal()
                         ->toMediaCollection('images');

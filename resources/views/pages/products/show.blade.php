@@ -40,7 +40,7 @@
                 
                 {{-- PRODUCT IMAGES --}}
                 <div class="w-full lg:w-1/2">
-                    <div class="bg-steel-50 border border-steel-200 aspect-4/3 flex items-center justify-center p-4 relative overflow-hidden group">
+                    <div class="bg-white border border-steel-200 aspect-4/3 flex items-center justify-center p-4 relative overflow-hidden group">
                         {{-- Accents --}}
                         <div class="absolute top-2 left-2 w-2 h-2 border-t border-l border-primary-500"></div>
                         <div class="absolute top-2 right-2 w-2 h-2 border-t border-r border-primary-500"></div>
@@ -48,9 +48,9 @@
                         <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
 
                         @if($product->hasMedia('images'))
-                            <img src="{{ $product->getFirstMediaUrl('images') }}" alt="{{ $product->name }}" class="w-full h-full object-contain object-center absolute inset-0 p-8 hover:scale-105 transition-transform duration-700 mix-blend-luminosity group-hover:mix-blend-normal">
+                            <img src="{{ $product->getFirstMediaUrl('images') }}" alt="{{ $product->name }}" class="w-full h-full object-contain object-center absolute inset-0 p-6 hover:scale-105 transition-transform duration-500">
                         @else
-                            <div class="w-full h-full bg-steel-200 flex items-center justify-center text-steel-400 absolute inset-0">
+                            <div class="w-full h-full bg-steel-100 flex items-center justify-center text-steel-400 absolute inset-0">
                                 <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                             </div>
                         @endif
@@ -60,8 +60,8 @@
                     @if($product->getMedia('images')->count() > 1)
                     <div class="grid grid-cols-4 gap-4 mt-4">
                         @foreach($product->getMedia('images')->skip(1)->take(4) as $media)
-                        <div class="bg-steel-50 border border-steel-200 aspect-square cursor-pointer hover:border-primary-500 transition-colors p-1">
-                            <img src="{{ $media->getUrl() }}" class="w-full h-full object-contain mix-blend-luminosity hover:mix-blend-normal" alt="Thumbnail">
+                        <div class="bg-white border border-steel-200 aspect-square cursor-pointer hover:border-primary-500 transition-colors p-2 flex items-center justify-center">
+                            <img src="{{ $media->getUrl() }}" class="w-full h-full object-contain transition-transform hover:scale-105" alt="Thumbnail">
                         </div>
                         @endforeach
                     </div>

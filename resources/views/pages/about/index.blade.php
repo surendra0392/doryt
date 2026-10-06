@@ -27,7 +27,7 @@
                 <div class="w-full lg:w-1/2 p-2 bg-steel-150 border border-steel-200 rounded-none shadow-xl relative flex items-center justify-center">
                     <div class="absolute top-0 left-0 w-3 h-3 border-t border-l border-primary-500"></div>
                     <div class="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-primary-500"></div>
-                    <img src="{{ asset('img/fac_hq_1783126228186.png') }}" alt="DO-RYT Headquarters" class="w-full h-full object-cover rounded-none mix-blend-luminosity hover:mix-blend-normal transition-all duration-700">
+                    <img src="{{ asset('img/fac_hq_1783126228186.png') }}" alt="DO-RYT Headquarters" class="w-full h-full object-cover rounded-none transition-all duration-700">
                 </div>
                 <div class="w-full lg:w-1/2 flex flex-col justify-between">
                     <div>
@@ -75,7 +75,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-reveal="stagger">
                 <div class="bg-white border border-steel-200 rounded-none overflow-hidden group p-2">
                     <div class="aspect-4/3 overflow-hidden bg-steel-100 border border-steel-150">
-                        <img src="{{ asset('img/fac_production_1783126256969.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-luminosity group-hover:mix-blend-normal" alt="Production Floor">
+                        <img src="{{ asset('img/fac_production_1783126256969.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Production Floor">
                     </div>
                     <div class="p-6">
                         <span class="font-mono text-[9px] text-steel-400 uppercase tracking-widest block mb-1.5">[ UNIT_01 ]</span>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="bg-white border border-steel-200 rounded-none overflow-hidden group p-2">
                     <div class="aspect-4/3 overflow-hidden bg-steel-100 border border-steel-150">
-                        <img src="{{ asset('img/fac_engineering_1783126246830.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-luminosity group-hover:mix-blend-normal" alt="Engineering Team">
+                        <img src="{{ asset('img/fac_engineering_1783126246830.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Engineering Team">
                     </div>
                     <div class="p-6">
                         <span class="font-mono text-[9px] text-steel-400 uppercase tracking-widest block mb-1.5">[ UNIT_02 ]</span>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="bg-white border border-steel-200 rounded-none overflow-hidden group p-2">
                     <div class="aspect-4/3 overflow-hidden bg-steel-100 border border-steel-150">
-                        <img src="{{ asset('img/fac_testing_1783126267057.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-luminosity group-hover:mix-blend-normal" alt="Quality Testing">
+                        <img src="{{ asset('img/fac_testing_1783126267057.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Quality Testing">
                     </div>
                     <div class="p-6">
                         <span class="font-mono text-[9px] text-steel-400 uppercase tracking-widest block mb-1.5">[ UNIT_03 ]</span>

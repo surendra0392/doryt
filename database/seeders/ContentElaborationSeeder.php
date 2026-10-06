@@ -96,7 +96,24 @@ class ContentElaborationSeeder extends Seeder
         // we dynamically generate elaborate descriptions based on the product name.
         $products = Product::all();
 
+        $mappedSlugs = [
+            'ftd-12-industrial-tray-dryer',
+            'ftd-24-industrial-tray-dryer',
+            'vacuum-freeze-dryers',
+            'fruits-vegetables-processing-line',
+            'ss-304-blanching-tank-with-basket',
+            'dual-temperature-chamber-lab-refrigerator-deep-freezer',
+            'do-ryt-industrial-slicer',
+            'do-ryt-automatic-pulverizer',
+            'do-ryt-vibro-sifter',
+            'do-ryt-ribbon-blender',
+        ];
+
         foreach ($products as $product) {
+            if (in_array($product->slug, $mappedSlugs, true)) {
+                continue;
+            }
+
             $name = $product->name;
 
             $short = "Industrial-grade {$name} designed for continuous operation, high efficiency, and uncompromising product quality.";

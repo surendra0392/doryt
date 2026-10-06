@@ -27,25 +27,26 @@ class ProductSeeder extends Seeder
         $products = [
             // ─── Dryers & Dehydrators ───
             [
-                'name' => 'Electrical Dehydrators',
+                'name' => 'FTD-12 Industrial Tray Dryer',
                 'category_id' => $dryersCat->id,
-                'short_description' => 'Electric-powered dehydration systems with precise temperature control for uniform drying of fruits, vegetables, herbs, and marine products.',
-                'full_description' => 'Our Electrical Dehydrators feature digitally controlled heating elements with adjustable airflow for consistent moisture removal. Constructed from food-grade stainless steel, these units are ideal for small to medium-scale dehydration operations requiring precise temperature management.',
-                'features' => ['Digital Temperature Control', 'Adjustable Airflow', 'Food-Grade SS Construction', 'Energy-Efficient Heating Elements'],
-                'technical_specifications' => ['Temperature Range' => '30°C – 90°C', 'Capacity' => '50 – 500 kg/batch', 'Power Supply' => '220V – 440V AC'],
-                'is_featured' => false,
+                'short_description' => '12-tray stainless steel electric tray dryer with digital temperature controller, uniform forced-air circulation, and food-grade SS-304 construction.',
+                'full_description' => '<p>The DO-RYT FTD-12 Tray Dryer is precision-engineered for uniform, batch dehydration of fruits, vegetables, herbs, spices, and nutraceutical products. Featuring a high-accuracy digital temperature controller, high-efficiency blower, and durable SS-304 food-grade contact parts, this unit ensures reliable moisture extraction while preserving product color, flavor, and active compounds.</p><p>Equipped with thermal-insulated double wall construction, silicone door gasket, and heavy-duty locking castors for effortless mobility on the production floor.</p>',
+                'features' => ['12 Food-Grade SS Trays', 'Digital PID Temperature Controller', 'High-Velocity Blower Airflow', 'Heavy-Duty Castor Wheels for Mobility', 'Thermal Insulated SS-304 Body', 'Safety Over-Temperature Cutoff'],
+                'technical_specifications' => ['Model' => 'FTD-12', 'Tray Capacity' => '12 Trays (16" x 32")', 'Temperature Range' => 'Ambient to 95°C', 'Power Supply' => '220V Single Phase / 415V 3-Phase', 'Body Material' => 'SS-304 Food Grade', 'Airflow' => 'Motorized Recirculating Fan'],
+                'is_featured' => true,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => '12 Trays Standard (SS-304)',
+                        'specifications' => ['Capacity' => '12 Trays', 'Power' => '3 kW / 220V', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => '12 Trays GMP Pharma (SS-316L)',
+                        'specifications' => ['Capacity' => '12 Trays', 'Power' => '3 kW / 415V', 'Material' => 'SS-316L'],
                     ],
                 ],
                 'sort_order' => 1,
-                'image' => 'cat_freeze_dryers_1783126120106.png',
+                'image' => 'ftd_12_tray_dryer.png',
+                'gallery' => ['ftd_12_tray_dryer_front.png'],
             ],
             [
                 'name' => 'Heat Pump Dehydrators',
@@ -69,25 +70,25 @@ class ProductSeeder extends Seeder
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
             [
-                'name' => 'Hot Air Dryers',
+                'name' => 'FTD-24 Industrial Tray Dryer',
                 'category_id' => $dryersCat->id,
-                'short_description' => 'High-velocity hot air drying systems designed for rapid, uniform moisture extraction from bulk materials and agricultural produce.',
-                'full_description' => 'Engineered for high-throughput operations, our Hot Air Dryers utilize precisely controlled heated air circulated through multi-stage plenums. Suitable for grains, seeds, spices, and industrial raw materials requiring fast, even drying.',
-                'features' => ['High-Velocity Air Circulation', 'Multi-Stage Plenum Design', 'Uniform Drying Pattern', 'Fuel Options: Diesel / Gas / Electric'],
-                'technical_specifications' => ['Temperature Range' => '40°C – 120°C', 'Air Flow' => '5000 – 50000 CFM', 'Capacity' => '500 – 5000 kg/h'],
-                'is_featured' => false,
+                'short_description' => '24-tray industrial dehydration chamber with precision digital controls, double-door thermal seal, and heavy-duty stainless steel frame.',
+                'full_description' => '<p>The DO-RYT FTD-24 Tray Dryer provides commercial-scale dehydration throughput with 24 high-capacity trays. Equipped with an ergonomic front control panel, automated blower circulation, heating element status indicators, and heavy-duty mobile castors, it is built for continuous production across agro-processing, food, and herbal manufacturing.</p><p>Built with sanitary welds and optimized plenum ducting for identical drying rates across all 24 tray levels.</p>',
+                'features' => ['24 Standard SS Trays Capacity', 'Microprocessor Temperature Controller', 'Even Heat Distribution Ducts', 'Dual Heavy-Duty Latches with Silicone Seal', 'Energy-Optimized Heating Elements', 'Industrial Floor Castors with Locks'],
+                'technical_specifications' => ['Model' => 'FTD-24', 'Tray Capacity' => '24 Trays (16" x 32")', 'Temperature Range' => 'Ambient to 110°C', 'Air Circulation' => 'Motorized Forced Draft', 'MOC' => 'SS-304 / SS-316', 'Heating Load' => '6 kW – 12 kW'],
+                'is_featured' => true,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => '24 Trays Standard (SS-304)',
+                        'specifications' => ['Capacity' => '24 Trays', 'Power' => '6 kW / 415V', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => '24 Trays GMP Pharma (SS-316L)',
+                        'specifications' => ['Capacity' => '24 Trays', 'Power' => '6 kW / 415V', 'Material' => 'SS-316L'],
                     ],
                 ],
                 'sort_order' => 3,
-                'image' => 'cat_freeze_dryers_1783126120106.png',
+                'image' => 'ftd_24_tray_dryer.png',
             ],
             [
                 'name' => 'Vacuum Tray Dryers',
@@ -155,23 +156,23 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Vacuum Freeze Dryers',
                 'category_id' => $dryersCat->id,
-                'short_description' => 'Advanced lyophilization systems for premium-quality drying of pharmaceuticals, biologics, specialty foods, and heat-sensitive materials.',
-                'full_description' => 'Our Vacuum Freeze Dryers utilize sublimation technology to remove moisture from frozen products under vacuum, preserving cellular structure, flavour, and nutritional integrity. Available from pilot-scale R&D units to fully automated industrial production systems with SIP/CIP capabilities.',
-                'features' => ['Sublimation Technology', 'Cascade Refrigeration (-85°C)', 'Siemens PLC / SCADA Control', 'SIP/CIP Automated (Industrial Models)'],
-                'technical_specifications' => ['Shelf Area' => '0.5 – 100 m²', 'Condenser Capacity' => '10 – 1500 kg', 'Vacuum Level' => '< 1 Pa'],
+                'short_description' => 'State-of-the-art lyophilization systems with INVT touchscreen HMI, vacuum sublimation chamber, and cryogenic condensation.',
+                'full_description' => '<p>DO-RYT Vacuum Freeze Dryers deliver premier lyophilization technology, removing moisture via sublimation at ultra-low temperatures under deep vacuum. Featuring an intuitive INVT touchscreen PLC controller, precision pressure gauge, multi-tier product shelf rack, and heavy-duty silicone vacuum sealing ring, this flagship machine retains 98%+ of biological nutrients, aromas, and cellular structure in high-value food, fruits, pharma, and biologics.</p><p>Constructed from polished SS-304/316 with automated defrosting, cascade refrigeration, and industrial lockable castors.</p>',
+                'features' => ['INVT Color Touchscreen PLC Interface', 'Sublimation Freeze-Drying Technology', 'Ultra-Low Temperature Condenser (-50°C to -80°C)', 'Sanitary SS-304/316 Chamber with Heavy-Duty Seal Ring', 'Multi-Tier Removable Stainless Steel Shelves', 'Integrated High-Vacuum Pumping System'],
+                'technical_specifications' => ['Control System' => 'INVT Touchscreen PLC', 'Condenser Temp' => '-50°C to -80°C', 'Ultimate Vacuum' => '< 10 Pa', 'Shelf System' => 'Multi-Tier SS Heated Shelves', 'MOC' => 'SS-304 / SS-316L', 'Refrigeration' => 'Cascade Eco-Friendly System'],
                 'is_featured' => true,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => 'Pilot Scale Lyophilizer',
+                        'specifications' => ['Capacity' => '5 – 10 kg/batch', 'Power' => '220V', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => 'Industrial Production Lyophilizer',
+                        'specifications' => ['Capacity' => '50 – 500 kg/batch', 'Power' => '415V 3-Phase', 'Material' => 'SS-316L'],
                     ],
                 ],
                 'sort_order' => 7,
-                'image' => 'flagship_machine_1783126168912.png',
+                'image' => 'vacuum_freeze_dryer.png',
             ],
             [
                 'name' => 'Spray Dryers',
@@ -220,23 +221,24 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Fruits & Vegetables Processing Line',
                 'category_id' => $processCat->id,
-                'short_description' => 'Complete turnkey processing line for fruits and vegetables from washing and sorting to cutting, drying, and packaging.',
-                'full_description' => 'A fully integrated processing line designed for high-volume fruit and vegetable operations. Includes drum washing, abrasive peeling, inspection conveyors, precision cutting, blanching, and drying modules. Built on a hygienic tubular frame with SS-304 construction.',
-                'features' => ['Integrated Washing to Packaging', 'Hygienic Tubular Frame', 'Variable Speed Drives', 'Easy-Clean Design'],
-                'technical_specifications' => ['Throughput' => '1 – 10 tons/h', 'Water Consumption' => 'Recycled Multi-Stage', 'Power Consumption' => '50 – 200 kW'],
+                'short_description' => 'Complete 10-step turnkey industrial processing line from sorting and bubble washing to slicing, blanching, drying, and packaging.',
+                'full_description' => '<p>A complete integrated turnkey manufacturing solution for fruits and vegetables. Engineered by DO-RYT to cover the complete dehydration pipeline: 1. Raw Material Receiving & Sorting Table, 2. Bubble Washing Tank, 3. Inspection & Preparation Table, 4. Industrial Slicer/Dicer, 5. SS-304 Blanching Tank with Basket Hoist, 6. Cold Water Cooling Tank, 7. Centrifugal Dewatering Unit, 8. Tray Loading Trolley, 9. Hot Air Tray Dryer, and 10. Final Collection & Packing Table.</p><p>Each station is modularly interconnected for seamless flow, maximum product yield, and strict compliance with HACCP food hygiene standards.</p>',
+                'features' => ['10-Stage Continuous Processing Flow', 'SS-304 Sanitary Food-Grade Construction', 'Integrated Pneumatic / Electric Hoist on Blanching', 'High-Efficiency Bubble Wash Air Agitation', 'Rapid Centrifugal Water Extraction', 'Complete Turnkey Design & Commissioning'],
+                'technical_specifications' => ['Pipeline Stages' => '10 Integrated Units', 'Throughput' => '500 kg/h – 5000 kg/h', 'Washing System' => 'Continuous Bubble Air-Agitation', 'Dewatering' => 'High-Speed Spin Extraction', 'MOC' => 'Complete SS-304', 'Automation' => 'Centralized Electrical Controls'],
                 'is_featured' => true,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => '500 kg/h Turnkey Line',
+                        'specifications' => ['Capacity' => '500 kg/h', 'Power' => '50 kW', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => '2000 kg/h High-Capacity Turnkey Line',
+                        'specifications' => ['Capacity' => '2000 kg/h', 'Power' => '150 kW', 'Material' => 'SS-304'],
                     ],
                 ],
                 'sort_order' => 10,
-                'image' => 'cat_food_processing_1783126130193.png',
+                'image' => 'complete_dehydration_process_line.png',
+                'gallery' => ['dehydration_process_line_panoramic.png'],
             ],
             [
                 'name' => 'Papad & Chapati/Roti Making Line',
@@ -346,25 +348,26 @@ class ProductSeeder extends Seeder
 
             // ─── Cold Chain Solutions ───
             [
-                'name' => 'Modular Cold Storage Rooms',
+                'name' => 'Dual Temperature Chamber (Lab Refrigerator & Deep Freezer)',
                 'category_id' => $coldChainCat->id,
-                'short_description' => 'Customizable modular cold rooms with PUF panels for temperature-controlled storage of perishable goods.',
-                'full_description' => 'Pre-engineered modular cold storage rooms constructed from high-density PUF (Polyurethane Foam) sandwiched panels. Available in any configuration with precise temperature control from +15°C to -25°C. Quick installation and expandable design.',
-                'features' => ['Modular PUF Panel Construction', 'Temperature Range: +15°C to -25°C', 'Quick Installation', 'Expandable & Relocatable'],
-                'technical_specifications' => ['Panel Thickness' => '75 – 150 mm', 'Temperature Range' => '+15°C to -25°C', 'Capacity' => '10 – 5000 MT'],
-                'is_featured' => false,
+                'short_description' => 'Commercial dual-temperature chamber combining independent lab refrigeration and ultra-low deep freezer sections with dual digital controllers.',
+                'full_description' => '<p>The DO-RYT Dual Temperature Chamber provides two independent, hermetically sealed temperature zones in a single compact footprint: an upper Lab Refrigerator compartment and a lower Deep Freezer compartment. Controlled via dual high-precision digital PID temperature panels with independent compressor management, alarm systems, and mains switching. Ideal for R&D laboratories, seed preservation, pharmaceutical testing, and cold storage sampling.</p><p>Constructed with polished SS-304 panels, heavy-duty industrial door hinges, latch locks, and lockable castor wheels for easy mobility.</p>',
+                'features' => ['Dual Independent Temperature Zones', 'Separate Digital Microprocessor Controllers', 'Audio-Visual High/Low Alarms', 'Heavy-Duty SS-304 Interior and Exterior', 'Industrial Mobility Castors with Locking Brakes', 'Hermetic Low-Noise Compressors'],
+                'technical_specifications' => ['Zones' => '2 (Lab Refrigerator + Deep Freezer)', 'Refrigeration Range' => '+2°C to +8°C', 'Deep Freezer Range' => '-20°C to -40°C', 'Controller' => 'Dual Digital PID with Independent Sensors', 'MOC' => 'All Stainless Steel SS-304', 'Power' => '220V 50Hz'],
+                'is_featured' => true,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => 'Dual Zone Standard (SS-304)',
+                        'specifications' => ['Capacity' => 'Dual 250L', 'Power' => '220V', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => 'Dual Zone Pharma GMP (SS-316L)',
+                        'specifications' => ['Capacity' => 'Dual 500L', 'Power' => '220V', 'Material' => 'SS-316L'],
                     ],
                 ],
                 'sort_order' => 16,
-                'image' => 'cat_cold_storage_1783126148402.png',
+                'image' => 'lab_refrigerator_deep_freezer_side.png',
+                'gallery' => ['lab_refrigerator_deep_freezer_front.png'],
             ],
             [
                 'name' => 'Refrigeration Vans',
@@ -453,46 +456,46 @@ class ProductSeeder extends Seeder
 
             // ─── Ancillary Equipment ───
             [
-                'name' => 'Slicers',
+                'name' => 'Do-Ryt Industrial Slicer',
                 'category_id' => $ancillaryCat->id,
-                'short_description' => 'Precision industrial slicers for uniform cutting of fruits, vegetables, meat, and processed food products.',
-                'full_description' => 'Heavy-duty industrial slicers featuring adjustable blade speed and cutting thickness. Available in rotary, reciprocating, and centrifugal configurations for different product types and throughput requirements.',
-                'features' => ['Adjustable Slice Thickness', 'Multiple Blade Configurations', 'Continuous Feed Operation', 'Easy-Cleaning Design'],
-                'technical_specifications' => ['Slice Thickness' => '0.5 – 50 mm', 'Capacity' => '200 – 3000 kg/h', 'Blade Material' => 'SS-420 / Carbide'],
-                'is_featured' => false,
-                'variants' => [
-                    [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
-                    ],
-                    [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
-                    ],
-                ],
-                'sort_order' => 21,
-                'image' => 'cat_processing_equip_1783126158752.png',
-            ],
-            [
-                'name' => 'Cold Pulverisers',
-                'category_id' => $ancillaryCat->id,
-                'short_description' => 'Cryogenic and ambient pulverizers for ultra-fine grinding of spices, grains, herbs, and heat-sensitive materials.',
-                'full_description' => 'Advanced pulverizers that can operate at ambient or cryogenic temperatures. Liquid nitrogen injection enables grinding of heat-sensitive and high-fat materials without clogging. Achieves particle sizes down to 100 mesh and finer.',
-                'features' => ['Cryogenic / Ambient Operation', 'Ultra-Fine Grinding (100+ Mesh)', 'No Heat Generation', 'Liquid Nitrogen Injection System'],
-                'technical_specifications' => ['Fineness' => '100 – 300 Mesh', 'Capacity' => '25 – 500 kg/h', 'Motor Power' => '5 – 50 HP'],
+                'short_description' => 'Multi-purpose high-speed vegetable and fruit cutting machine with interchangeable circular discs for slicing, dicing, shredding, and grating.',
+                'full_description' => '<p>The DO-RYT Industrial Vegetable Slicer offers unmatched cutting versatility for commercial kitchens, food processing plants, and dehydration lines. Featuring heavy-duty all-stainless steel construction, quick-clamp feed hopper, power-saver motor, emergency stop button, and multiple interchangeable cutting discs (fine slicing, thick slicing, julienne, dicing grids, and grating plates).</p><p>Easy disassembly allows quick sanitation between varying produce batches.</p>',
+                'features' => ['6 Interchangeable Cutter Discs Included', 'Quick-Release Clamping Hopper for Fast Cleanout', 'Safety Interlock & Emergency Stop Button', 'Energy-Efficient High-Torque Motor', 'Compact Countertop Design with Anti-Vibration Feet', 'Smooth SS Finish for Rapid Washing'],
+                'technical_specifications' => ['Cutting Discs' => '6 Interchangeable Blades Included', 'Throughput' => '150 – 500 kg/h', 'Feed Chute' => 'Large Cylindrical Gravity Hopper', 'Power' => 'Single Phase 220V', 'Material' => 'SS-304 Food Grade'],
                 'is_featured' => true,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => 'Tabletop Slicer Model',
+                        'specifications' => ['Capacity' => '150 – 300 kg/h', 'Power' => '0.75 kW / 220V', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => 'High-Capacity Floor Stand Slicer',
+                        'specifications' => ['Capacity' => '300 – 600 kg/h', 'Power' => '1.5 kW / 415V', 'Material' => 'SS-304'],
+                    ],
+                ],
+                'sort_order' => 21,
+                'image' => 'industrial_slicer.png',
+            ],
+            [
+                'name' => 'Do-Ryt Automatic Pulverizer',
+                'category_id' => $ancillaryCat->id,
+                'short_description' => 'Fully automatic high-speed pulverizer with stainless steel feed hopper, rotating beaters, interchangeable perforated screens, and collection drum.',
+                'full_description' => '<p>The DO-RYT Fully Automatic Pulverizer is designed for micro-fine pulverization of grains, spices, dry fruits, herbs, and agro-minerals. Equipped with a wide-mouth SS conical feed hopper, high-speed rotary beating blades, dynamic cylindrical grinding chamber with quick-change perforated sizing screens, and a sealed bottom collection drum on lockable castor wheels.</p><p>Ensures minimal heat rise during grinding to preserve volatile aromatic oils in spices and active botanicals.</p>',
+                'features' => ['Fully Automatic Continuous Milling', 'High-Speed Balanced Rotor with Beater Blades', 'Interchangeable Fine/Coarse Mesh Screens', 'Dedicated SS Drum Collector with Tight Clamp', 'Locking Castor Base for Easy Movement', 'Low Heat Generation for Spice Quality'],
+                'technical_specifications' => ['Milling Chamber' => 'High-Speed Rotary Rotor', 'Mesh Output' => '30 to 200 Mesh', 'Capacity' => '50 – 300 kg/h', 'Collection Drum' => 'SS-304 Removable Container', 'Motor' => '3 HP – 10 HP Heavy Duty', 'MOC' => 'Complete Stainless Steel'],
+                'is_featured' => true,
+                'variants' => [
+                    [
+                        'name' => 'Standard Automatic Pulverizer (5 HP)',
+                        'specifications' => ['Capacity' => '50 – 100 kg/h', 'Power' => '5 HP / 415V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Heavy Duty Industrial Pulverizer (10 HP)',
+                        'specifications' => ['Capacity' => '150 – 300 kg/h', 'Power' => '10 HP / 415V', 'Material' => 'SS-304'],
                     ],
                 ],
                 'sort_order' => 22,
-                'image' => 'cat_processing_equip_1783126158752.png',
+                'image' => 'automatic_pulverizer.png',
             ],
             [
                 'name' => 'Cutting Machines',
@@ -516,25 +519,25 @@ class ProductSeeder extends Seeder
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
             [
-                'name' => 'Vibro Sifter',
+                'name' => 'Do-Ryt Vibro Sifter',
                 'category_id' => $ancillaryCat->id,
-                'short_description' => 'High-efficiency vibratory sifting and screening equipment for powder and granular material classification.',
-                'full_description' => 'Gyratory vibro sifters designed for accurate particle size separation of dry and wet materials. Features multi-deck configurations, quick-release clamping, and easy screen changes for minimal downtime between batches.',
-                'features' => ['Multi-Deck Screening', 'Quick-Release Clamping', 'Easy Screen Change', 'Low Noise & Vibration'],
-                'technical_specifications' => ['Screen Diameter' => '600 – 1500 mm', 'Number of Decks' => '1 – 5', 'Motor Power' => '0.5 – 3.0 kW'],
+                'short_description' => 'Precision gyratory vibratory sifter with multi-deck stainless steel classification screens, high-tension suspension springs, and directional discharge chute.',
+                'full_description' => '<p>The DO-RYT Vibro Sifter is an essential classification machine for food powders, pharmaceutical granules, chemical compounds, and spices. Utilizing a high-frequency vibration motor suspended on heavy-duty coil springs, it provides 3D gyratory motion for rapid separation, de-dusting, and grading with zero mesh blinding.</p><p>Features sanitary quick-release band clamps for screen replacement in under 2 minutes.</p>',
+                'features' => ['Gyratory 3D Vibratory Separation', 'Quick-Release Clamp Rings for Instant Screen Change', 'High-Tension Steel Springs for Isolated Vibration', 'Tangential Continuous Discharge Spout', 'Heavy-Duty Base with Castor Wheels', 'Dust-Tight Top Cover with Inspection Port'],
+                'technical_specifications' => ['Diameter' => '600 mm – 1200 mm', 'Decks' => 'Single / Double Deck', 'Screen Mesh' => '10 to 400 Mesh Sizing', 'MOC' => 'Contact Parts SS-316L / SS-304', 'Vibration Motor' => '0.5 HP – 2.0 HP TEFC', 'Portability' => 'Castor Wheels Mounted'],
                 'is_featured' => false,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => 'Single Deck 24" (600 mm)',
+                        'specifications' => ['Diameter' => '600 mm', 'Power' => '0.5 HP', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => 'Double Deck 36" (900 mm)',
+                        'specifications' => ['Diameter' => '900 mm', 'Power' => '1.0 HP', 'Material' => 'SS-316L'],
                     ],
                 ],
                 'sort_order' => 24,
-                'image' => 'cat_processing_equip_1783126158752.png',
+                'image' => 'vibro_sifter.png',
             ],
             [
                 'name' => 'Packaging Machines',
@@ -558,46 +561,46 @@ class ProductSeeder extends Seeder
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
             [
-                'name' => 'Bleaching & Drying Equipment',
-                'category_id' => $ancillaryCat->id,
-                'short_description' => 'Industrial bleaching and drying systems for edible oils, grains, and food ingredient processing.',
-                'full_description' => 'Custom-engineered bleaching and drying equipment for the edible oil and food processing industries. Features vacuum bleaching vessels, agitated drying chambers, and automated process control for consistent output quality.',
-                'features' => ['Vacuum Bleaching Vessel', 'Agitated Drying Chamber', 'Automated Process Control', 'SS-304/316L Construction'],
-                'technical_specifications' => ['Batch Capacity' => '500 – 10000 L', 'Temperature Range' => '30°C – 120°C', 'Vacuum Level' => '< 50 mbar'],
+                'name' => 'SS-304 Blanching Tank with Basket',
+                'category_id' => $processCat->id,
+                'short_description' => 'Industrial stainless steel blanching tank with motorized basket hoist, steam inlet control valve, digital temperature/timer panel, and bottom drain outlet.',
+                'full_description' => '<p>The DO-RYT Blanching Tank is engineered for precise thermal processing and enzyme deactivation in fruits, vegetables, and agro commodities prior to drying or freezing. Features an integrated motorized basket hoist for effortless dipping and retrieval, SS perforated product basket, steam injection inlet with manual/pneumatic valve, digital PID temperature controller with batch timer, and heavy-duty sanitary drain outlet.</p><p>Ensures consistent enzyme inactivation and preserves the crisp texture and natural pigments of fruits and vegetables.</p>',
+                'features' => ['Electric / Manual Basket Hoist System', 'Heavy-Duty SS Perforated Product Basket', 'Steam Inlet with Precision Control Valve', 'Digital Controller with Temperature & Batch Timer', 'Bottom Drain Valve for Rapid Discharge', 'Rigid Stainless Steel Frame Support'],
+                'technical_specifications' => ['MOC' => 'SS-304 Sanitary Food-Grade', 'Heating Medium' => 'Steam / Electrical Immersion', 'Temperature Range' => 'Up to 100°C Controlled', 'Basket Capacity' => '100 – 500 kg/batch', 'Drain Valve' => 'Sanitary Ball Valve', 'Hoist Capacity' => 'Up to 250 kg'],
                 'is_featured' => false,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => '250L Blanching Tank with Hoist',
+                        'specifications' => ['Capacity' => '250 L', 'Heating' => 'Steam / Electric', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => '500L Industrial Blanching System',
+                        'specifications' => ['Capacity' => '500 L', 'Heating' => 'Steam Injection', 'Material' => 'SS-304'],
                     ],
                 ],
                 'sort_order' => 26,
-                'image' => 'cat_processing_equip_1783126158752.png',
+                'image' => 'blanching_tank_with_basket.png',
             ],
             [
-                'name' => 'Ribbon Blenders',
+                'name' => 'Do-Ryt Ribbon Blender',
                 'category_id' => $ancillaryCat->id,
-                'short_description' => 'Heavy-duty ribbon blenders for rapid homogeneous mixing of dry powders, granules, and semi-solids.',
-                'full_description' => 'High-efficiency ribbon blenders utilizing dual helical ribbons for convective and diffusive mixing action. Suitable for food ingredients, pharmaceutical powders, chemical compounds, and animal feed formulations.',
-                'features' => ['Dual Helical Ribbon Agitator', 'Pneumatic / Manual Discharge', 'Liquid Spray Nozzle Option', 'Custom Volume Configurations'],
-                'technical_specifications' => ['Working Volume' => '50 – 5000 L', 'Motor Power' => '2 – 50 kW', 'Material' => 'SS-304 / SS-316'],
+                'short_description' => 'Industrial U-trough ribbon blender with dual helical agitator, heavy-duty gear reducer, and robust stainless steel structural support frame.',
+                'full_description' => '<p>The DO-RYT Ribbon Blender delivers high-efficiency, homogeneous blending of dry powders, spices, premixes, and granules. Features a precision-engineered U-shaped mixing trough, contra-flow double helical ribbon agitator, direct-coupled motor with heavy-duty gear reducer, safety-interlocked top lid, and heavy-duty square-tube support structure.</p><p>Provides thorough convective and diffusive blending action, achieving batch homogeneity in under 10 minutes.</p>',
+                'features' => ['Double Helical Contra-Flow Ribbon Agitator', 'High-Torque Reduction Gearbox Drive', 'Heavy-Duty SS-304 Structural Tube Stand', 'Full-Length Hinged Top Cover with Safety Grid', 'Pneumatic / Manual Bottom Center Discharge', 'Sanitary Shaft Seals with Air Purge Option'],
+                'technical_specifications' => ['Capacity' => '100 L to 3000 L', 'Blending Time' => '5 – 15 minutes per batch', 'Homogeneity' => '99%+ Coefficient of Variation', 'Drive' => 'Heavy-Duty Motor with Gear Reducer', 'MOC' => 'SS-304 / SS-316L', 'Discharge' => 'Center Flap / Knife Gate Valve'],
                 'is_featured' => false,
                 'variants' => [
                     [
-                        'name' => 'Standard Model',
-                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                        'name' => '500L Ribbon Blender (SS-304)',
+                        'specifications' => ['Working Volume' => '500 L', 'Power' => '7.5 HP', 'Material' => 'SS-304'],
                     ],
                     [
-                        'name' => 'Pro Model',
-                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                        'name' => '1000L Ribbon Blender (SS-316L)',
+                        'specifications' => ['Working Volume' => '1000 L', 'Power' => '15 HP', 'Material' => 'SS-316L'],
                     ],
                 ],
                 'sort_order' => 27,
-                'image' => 'cat_processing_equip_1783126158752.png',
+                'image' => 'ribbon_blender.png',
             ],
             [
                 'name' => 'SS-304 Work Tables & Other Equipment',
@@ -623,22 +626,40 @@ class ProductSeeder extends Seeder
         ];
 
         foreach ($products as $prod) {
-            $image = $prod['image'];
-            unset($prod['image']);
+            $image = $prod['image'] ?? null;
+            $gallery = $prod['gallery'] ?? [];
+            unset($prod['image'], $prod['gallery']);
 
-            $model = Product::updateOrCreate(
-                ['name' => $prod['name']],
-                array_merge($prod, [
-                    'slug' => Str::slug($prod['name']),
-                    'status' => ContentStatus::Published,
-                ])
-            );
+            $slug = Str::slug($prod['name']);
+            $model = Product::where('slug', $slug)->orWhere('name', $prod['name'])->first();
+            if (! $model) {
+                $model = new Product;
+            }
+
+            $model->fill(array_merge($prod, [
+                'slug' => $slug,
+                'status' => ContentStatus::Published,
+            ]));
+            $model->save();
 
             if ($image && File::exists(public_path('img/'.$image))) {
-                if ($model->getMedia('images')->isEmpty()) {
+                $currentMedia = $model->getFirstMedia('images');
+                if (! $currentMedia || $currentMedia->file_name !== $image) {
+                    $model->clearMediaCollection('images');
                     $model->addMedia(public_path('img/'.$image))
                         ->preservingOriginal()
                         ->toMediaCollection('images');
+                }
+            }
+
+            foreach ($gallery as $gImg) {
+                if (File::exists(public_path('img/'.$gImg))) {
+                    $hasGallery = $model->getMedia('images')->contains('file_name', $gImg);
+                    if (! $hasGallery) {
+                        $model->addMedia(public_path('img/'.$gImg))
+                            ->preservingOriginal()
+                            ->toMediaCollection('images');
+                    }
                 }
             }
         }

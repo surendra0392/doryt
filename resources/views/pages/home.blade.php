@@ -87,7 +87,7 @@
                         <div class="absolute -bottom-1 -left-1 w-3 h-3 border-b border-l border-primary-500"></div>
                         <div class="absolute -bottom-1 -right-1 w-3 h-3 border-b border-r border-primary-500"></div>
 
-                        <img loading="lazy" src="{{ asset('img/about_heritage_1783126108660.png') }}" alt="Engineers discussing schematics" class="w-full h-full object-cover rounded-none mix-blend-luminosity hover:mix-blend-normal transition-all duration-700">
+                        <img loading="lazy" src="{{ asset('img/about_heritage_1783126108660.png') }}" alt="Engineers discussing schematics" class="w-full h-full object-cover rounded-none transition-all duration-500">
                         
                         <div class="absolute -bottom-6 -left-6 bg-steel-950 p-6 rounded-none shadow-xl border border-steel-800 text-white hidden md:block">
                             <div class="flex items-center gap-4">
@@ -148,7 +148,7 @@
                     <span class="text-primary-500 font-mono text-xs uppercase tracking-widest mb-4 block">[ FLAGSHIP MODEL ]</span>
                     <h3 class="text-3xl lg:text-4xl font-display font-extrabold text-white mb-6 uppercase tracking-tight">{{ $flagship->name }}</h3>
                     <p class="text-steel-400 text-base leading-relaxed mb-10 font-sans">
-                        {{ Str::limit($flagship->description, 200) }}
+                        {{ $flagship->short_description ?? Str::limit(strip_tags($flagship->full_description), 200) }}
                     </p>
                     
                     @if($flagship->technical_specifications)
@@ -167,10 +167,9 @@
                     </div>
                 </div>
                 
-                <div class="w-full lg:w-1/2 bg-steel-900 relative min-h-[400px] border-l border-steel-900">
-                    <div class="absolute inset-0 bg-linear-to-r from-steel-950 to-transparent z-10 lg:w-32 hidden lg:block"></div>
+                <div class="w-full lg:w-1/2 bg-white flex items-center justify-center p-8 relative min-h-[420px] border-t lg:border-t-0 lg:border-l border-steel-900">
                     @if($flagship->hasMedia('images'))
-                        <img loading="lazy" src="{{ $flagship->getFirstMediaUrl('images') }}" alt="{{ $flagship->name }}" class="w-full h-full object-cover opacity-40 mix-blend-luminosity hover:mix-blend-normal transition-all duration-750">
+                        <img loading="lazy" src="{{ $flagship->getFirstMediaUrl('images') }}" alt="{{ $flagship->name }}" class="w-full h-full max-h-[380px] object-contain transition-transform duration-500 hover:scale-105">
                     @endif
                 </div>
             </div>
@@ -184,11 +183,31 @@
         <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary-600/5 rounded-full blur-[120px] z-0"></div>
         
         <x-ui.container class="relative z-10">
-            <div class="text-center max-w-2xl mx-auto mb-20" data-reveal="fade-up">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-reveal="fade-up">
                 <span class="font-mono text-[10px] text-primary-500 uppercase tracking-widest block mb-4">[ OPERATIONAL PIPELINE ]</span>
                 <h2 class="text-3xl md:text-5xl font-display font-extrabold uppercase tracking-tight text-white mb-6">
                     Quality control from raw steel to commissioning.
                 </h2>
+            </div>
+
+            {{-- Authentic Turnkey Processing Line Graphic --}}
+            <div class="mb-20 bg-white p-6 md:p-8 border border-steel-800 shadow-2xl relative" data-reveal="fade-up">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 mb-6 border-b border-steel-200">
+                    <div>
+                        <span class="font-mono text-[10px] text-primary-600 uppercase tracking-widest block mb-1">[ CONTINUOUS PROCESSING LINE ]</span>
+                        <h3 class="text-xl md:text-2xl font-display font-extrabold text-steel-950 uppercase tracking-tight">Fruits & Vegetables Dehydration: Sorting to Packaging</h3>
+                    </div>
+                    <a href="{{ route('products.show', 'fruits-vegetables-processing-line') }}" class="inline-flex items-center gap-2 bg-steel-950 text-white hover:bg-primary-600 font-mono text-xs uppercase tracking-widest px-4 py-2.5 transition-colors shrink-0">
+                        View Complete Line Specs &rarr;
+                    </a>
+                </div>
+                <div class="overflow-x-auto pb-2">
+                    <img loading="lazy" src="{{ asset('img/dehydration_process_line_panoramic.webp') }}" alt="DO-RYT Complete Dehydration Process Line from Sorting to Packaging" class="w-full h-auto min-w-[750px] object-contain">
+                </div>
+                <div class="mt-4 pt-3 border-t border-steel-100 flex flex-wrap items-center justify-between text-[11px] font-mono text-steel-500 gap-2">
+                    <span>10 INTEGRATED STAGES: 01. Sorting &bull; 02. Bubble Wash &bull; 03. Preparation &bull; 04. Industrial Slicer &bull; 05. Blanching Tank &bull; 06. Cooling &bull; 07. Centrifugal Dewater &bull; 08. Tray Trolley &bull; 09. Tray Dryer &bull; 10. Packing</span>
+                    <span class="text-primary-600 font-bold">[ 100% TURNKEY INTEGRATION ]</span>
+                </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative" data-reveal="stagger">
@@ -249,7 +268,7 @@
                     <a href="{{ route('industries.show', $industry->slug) }}" class="group block relative h-80 rounded-none overflow-hidden bg-steel-900 border border-steel-800">
                         <div class="absolute inset-0 bg-linear-to-t from-steel-950/90 to-steel-900/10 z-10 transition-opacity duration-300"></div>
                         @if($industry->hasMedia('images'))
-                            <img loading="lazy" src="{{ $industry->getFirstMediaUrl('images') }}" alt="{{ $industry->name }}" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-55 mix-blend-luminosity group-hover:mix-blend-normal">
+                            <img loading="lazy" src="{{ $industry->getFirstMediaUrl('images') }}" alt="{{ $industry->name }}" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-70 group-hover:opacity-90">
                         @endif
                         <div class="absolute inset-x-0 bottom-0 p-6 z-20 transform transition-transform duration-300">
                             <span class="font-mono text-[9px] text-primary-400 block mb-1 uppercase tracking-widest">[ IND_{{ strtoupper(substr($industry->slug, 0, 3)) }} ]</span>
@@ -329,7 +348,7 @@
                     <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
                     
                     <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_hq_1783126228186.png') }}" alt="Factory Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity group-hover:mix-blend-normal">
+                        <img loading="lazy" src="{{ asset('img/fac_hq_1783126228186.png') }}" alt="Factory Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
                     </div>
                 </div>
                 
@@ -341,7 +360,7 @@
                     <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
 
                     <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_engineering_1783126246830.png') }}" alt="Engineering" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity group-hover:mix-blend-normal">
+                        <img loading="lazy" src="{{ asset('img/fac_engineering_1783126246830.png') }}" alt="Engineering" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
                     </div>
                 </div>
                 
@@ -353,7 +372,7 @@
                     <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
 
                     <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_production_1783126256969.png') }}" alt="Production" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity group-hover:mix-blend-normal">
+                        <img loading="lazy" src="{{ asset('img/fac_production_1783126256969.png') }}" alt="Production" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
                     </div>
                 </div>
                 
@@ -365,7 +384,7 @@
                     <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
 
                     <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_testing_1783126267057.png') }}" alt="Testing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity group-hover:mix-blend-normal">
+                        <img loading="lazy" src="{{ asset('img/fac_testing_1783126267057.png') }}" alt="Testing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
                     </div>
                 </div>
             </div>

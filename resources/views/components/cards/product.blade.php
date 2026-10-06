@@ -2,11 +2,11 @@
 
 <a href="{{ route('products.show', $product->slug) }}" class="group flex flex-col h-full bg-white rounded-none border border-steel-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-primary-500 transition-all duration-500 hover:-translate-y-1">
     <!-- Image Area -->
-    <div class="relative w-full aspect-4/3 bg-steel-50 overflow-hidden border-b border-steel-100">
+    <div class="relative w-full aspect-4/3 bg-white overflow-hidden border-b border-steel-100 flex items-center justify-center p-3">
         @if($product->hasMedia('images'))
-            <img loading="lazy" src="{{ $product->getFirstMediaUrl('images', 'thumb') }}" 
+            <img loading="lazy" src="{{ $product->getFirstMediaUrl('images') }}" 
                  alt="{{ $product->name }}" 
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 mix-blend-luminosity group-hover:mix-blend-normal">
+                 class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
         @else
             <div class="w-full h-full flex items-center justify-center text-steel-300">
                 <svg aria-hidden="true" class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
