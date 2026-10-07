@@ -36,8 +36,8 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => setting('general.primary_color', '#27a74a'),
                 'gray' => Color::Zinc,
             ])
-            ->brandLogo(fn () => setting('general.admin_logo_light') ? Storage::disk('public')->url(setting('general.admin_logo_light')) : (setting('general.site_logo') ? Storage::disk('public')->url(setting('general.site_logo')) : null))
-            ->darkModeBrandLogo(fn () => setting('general.admin_logo_dark') ? Storage::disk('public')->url(setting('general.admin_logo_dark')) : (setting('general.admin_logo_light') ? Storage::disk('public')->url(setting('general.admin_logo_light')) : (setting('general.site_logo') ? Storage::disk('public')->url(setting('general.site_logo')) : null)))
+            ->brandLogo(fn () => setting_image_url('general.admin_logo_light', 'img/logo_color.png'))
+            ->darkModeBrandLogo(fn () => setting_image_url('general.admin_logo_dark', 'img/logo_white.png'))
             ->brandLogoHeight('2.5rem')
             ->favicon(fn () => setting('general.favicon') ? Storage::disk('public')->url(setting('general.favicon')) : null)
             ->renderHook(

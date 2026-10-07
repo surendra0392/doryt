@@ -6,15 +6,8 @@
             <!-- Brand -->
             <div class="space-y-6">
                 <div class="flex items-center gap-3">
-                    @php $footerLogo = setting('general.footer_logo') ?: setting('general.site_logo'); @endphp
-                    @if($footerLogo)
-                        <img src="{{ Storage::disk('public')->url($footerLogo) }}" alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-8 w-auto object-contain">
-                    @else
-                        <div class="w-8 h-8 border border-primary-500 bg-primary-950/50 flex items-center justify-center text-primary-400 font-mono font-bold text-base">
-                            {{ substr(setting('general.site_name', 'DO-RYT'), 0, 1) }}
-                        </div>
-                        <span class="font-display font-extrabold text-lg tracking-widest text-white">{{ setting('general.site_name', 'DO-RYT') }}</span>
-                    @endif
+                    @php $footerLogoKey = setting('general.footer_logo') ? 'general.footer_logo' : 'general.site_logo'; @endphp
+                    <img src="{{ setting_image_url($footerLogoKey, 'img/logo_white.png') }}" alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-8 w-auto object-contain">
                 </div>
                 <p class="text-xs leading-relaxed max-w-xs text-balance font-mono uppercase tracking-wider text-steel-500">
                     [ SYS_REF: DRY-FOT-V1.0 ]<br/>

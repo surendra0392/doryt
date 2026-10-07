@@ -32,19 +32,11 @@
     <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Favicon & Touch Icons -->
-    @if (setting('general.favicon'))
-        <link rel="icon" type="image/png" href="{{ Storage::disk('public')->url(setting('general.favicon')) }}">
-    @else
-        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
-    @endif
+    <link rel="icon" type="image/png" href="{{ setting_image_url('general.favicon', 'favicon.png') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     <!-- App Icon -->
-    @if (setting('general.appicon'))
-        <link rel="apple-touch-icon" href="{{ Storage::disk('public')->url(setting('general.appicon')) }}">
-    @else
-        <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
-    @endif
+    <link rel="apple-touch-icon" href="{{ setting_image_url('general.appicon', 'apple-touch-icon.png') }}">
 
     @php
         $finalOgImage = $ogImage ?? null;
@@ -152,16 +144,9 @@
 <body class="bg-white text-steel-900 antialiased min-h-screen flex flex-col font-sans">
     <div class="js-loader fixed inset-0 z-[100] bg-steel-900 flex flex-col items-center justify-center">
         <div class="js-loader-logo flex items-center mb-8">
-            @php $preloaderLogo = setting('general.preloader') ?: setting('general.site_logo'); @endphp
-            @if ($preloaderLogo)
-                <img src="{{ Storage::disk('public')->url($preloaderLogo) }}"
-                    alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-10 w-auto object-contain mr-3">
-            @else
-                <div
-                    class="w-10 h-10 border border-primary-500 bg-primary-950/50 flex items-center justify-center text-primary-400 font-mono font-bold text-lg mr-3">
-                    {{ substr(setting('general.site_name', 'DO-RYT'), 0, 1) }}
-                </div>
-            @endif
+            @php $preloaderLogoKey = setting('general.preloader') ? 'general.preloader' : 'general.site_logo'; @endphp
+            <img src="{{ setting_image_url($preloaderLogoKey, 'img/logo_white.png') }}"
+                alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-10 w-auto object-contain mr-3">
 
         </div>
         <div class="w-48 h-1 bg-steel-800 rounded-full overflow-hidden">

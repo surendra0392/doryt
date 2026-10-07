@@ -8,17 +8,7 @@
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <a href="/" class="shrink-0 flex items-center gap-3 group">
-                @if(setting('general.site_logo'))
-                    <img src="{{ Storage::disk('public')->url(setting('general.site_logo')) }}" alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-10 w-auto object-contain">
-                @else
-                    <div class="w-10 h-10 border border-primary-500 bg-primary-950/50 flex items-center justify-center text-primary-400 font-mono font-bold text-lg transition-all duration-500 group-hover:bg-primary-500 group-hover:text-white group-hover:shadow-[0_0_15px_rgba(20,184,166,0.3)]">
-                        {{ substr(setting('general.site_name', 'DO-RYT'), 0, 1) }}
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-display font-extrabold text-xl tracking-widest text-white transition-colors duration-500">{{ setting('general.site_name', 'DO-RYT') }}</span>
-                        <span class="font-mono text-[9px] text-steel-500 uppercase tracking-widest leading-none mt-0.5">[ PRECISION_ENG ]</span>
-                    </div>
-                @endif
+                <img src="{{ setting_image_url('general.site_logo', 'img/logo_white.png') }}" alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-10 w-auto object-contain">
             </a>
 
             <!-- Desktop Navigation -->

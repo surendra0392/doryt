@@ -2,6 +2,7 @@
 
 use App\Models\Setting;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Storage;
 
 if (! function_exists('setting')) {
     /**
@@ -27,5 +28,25 @@ if (! function_exists('setting')) {
         }
 
         return $default;
+    }
+}
+
+if (! function_exists('setting_image_url')) {
+    /**
+     * Resolve an image setting to a public URL, falling back to a bundled asset
+     * when the setting is empty or the uploaded file is missing from storage.
+     *
+     * @param  string  $key  The setting key in format "group.key"
+     * @param  string  $fallbackAsset  Path relative to /public used as a fallback
+     */
+    function setting_image_url(string $key, string $fallbackAsset): string
+    {
+        $path = setting($key);
+
+        if ($path && Storage::disk('public')->exists($path)) {
+            return Storage::disk('public')->url($path);
+        }
+
+        return asset($fallbackAsset);
     }
 }
