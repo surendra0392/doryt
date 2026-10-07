@@ -44,7 +44,7 @@
             $finalOgImage = Storage::disk('public')->url($seo->og_image);
         }
         if (!$finalOgImage) {
-            $finalOgImage = setting('seo.og_image') ? Storage::disk('public')->url(setting('seo.og_image')) : asset('img/hero_bg_1783126095772.png');
+            $finalOgImage = setting('seo.og_image') ? Storage::disk('public')->url(setting('seo.og_image')) : asset('img/indian_factory_hero.jpg');
         }
     @endphp
 

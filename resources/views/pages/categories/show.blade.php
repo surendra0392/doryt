@@ -6,7 +6,7 @@
             @if($category->hasMedia('images'))
                 <img src="{{ $category->getFirstMediaUrl('images') }}" alt="{{ $category->name }}" class="w-full h-full object-cover opacity-10 mix-blend-overlay animate-slow-pan">
             @else
-                <img src="{{ asset('img/hero_bg_1783126095772.png') }}" alt="DO-RYT Category" class="w-full h-full object-cover opacity-10 mix-blend-overlay">
+                <img src="{{ asset('img/indian_factory_hero.jpg') }}" alt="DO-RYT Category" class="w-full h-full object-cover opacity-10 mix-blend-overlay">
             @endif
             <div class="absolute inset-0 bg-linear-to-t from-steel-950 via-steel-950/80 to-transparent"></div>
         </div>
