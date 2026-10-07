@@ -3,7 +3,6 @@
 namespace App\Filament\Resources\Testimonials\Schemas;
 
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
@@ -62,14 +61,6 @@ class TestimonialForm
                                     ->numeric()
                                     ->default(0)
                                     ->required(),
-                            ]),
-
-                        Section::make('Client Avatar')
-                            ->schema([
-                                SpatieMediaLibraryFileUpload::make('avatar')
-                                    ->collection('avatars')
-                                    ->image()
-                                    ->maxFiles(1),
                             ]),
                     ])->columnSpan(1),
                 ])->columnSpanFull(),

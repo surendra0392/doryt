@@ -351,12 +351,9 @@
                                 "{{ $testimonial->content }}"
                             </p>
                             <div class="flex items-center gap-4">
-                                @if($testimonial->hasMedia('avatars'))
-                                <img loading="lazy" src="{{ $testimonial->getFirstMediaUrl('avatars') }}" alt="{{ $testimonial->client_name }}" class="w-14 h-14 rounded-none object-cover border border-primary-500 p-0.5 bg-steel-950">
-                                @endif
                                 <div>
                                     <div class="font-display font-bold text-white text-base uppercase tracking-wider">{{ $testimonial->client_name }}</div>
-                                    <div class="font-mono text-xs text-steel-400 uppercase mt-0.5">{{ $testimonial->client_title }}, {{ $testimonial->client_company }}</div>
+                                    <div class="font-mono text-xs text-steel-400 uppercase mt-0.5">{{ collect([$testimonial->designation, $testimonial->company])->filter()->implode(', ') }}</div>
                                 </div>
                             </div>
                         </blockquote>

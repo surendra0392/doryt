@@ -5,58 +5,43 @@ namespace Database\Seeders;
 use App\Enums\ContentStatus;
 use App\Models\Testimonial;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\File;
 
 class TestimonialSeeder extends Seeder
 {
+    /**
+     * @var list<array{client_name: string, designation: string, company: string, content: string, sort_order: int}>
+     */
+    public const TESTIMONIALS = [
+        [
+            'client_name' => 'Rajesh Reddy',
+            'designation' => 'Managing Director',
+            'company' => 'Sri Venkateswara Agro Foods, Hyderabad',
+            'content' => 'We installed the DO-RYT vegetable dehydration line for our export orders and the difference was clear from the first batch. Colour, aroma and moisture levels stay consistent, and the build quality is exactly what our buyers expect.',
+            'sort_order' => 1,
+        ],
+        [
+            'client_name' => 'Priya Nair',
+            'designation' => 'Head of Operations',
+            'company' => 'Malabar Fresh Exports, Kochi',
+            'content' => 'Their freeze dryer has been running on our seafood and fruit lines almost non-stop, with very little downtime. The service team in Hyderabad responds quickly and the spares have always reached us on time.',
+            'sort_order' => 2,
+        ],
+        [
+            'client_name' => 'Anil Kumar Sharma',
+            'designation' => 'Plant Head',
+            'company' => 'Himalayan Herbs & Nutraceuticals, Dehradun',
+            'content' => 'From the ribbon blender to the pulverizer, every machine arrived fully tested and was commissioned without any fuss. For the price, we could not find better stainless steel finish or after-sales support in India.',
+            'sort_order' => 3,
+        ],
+    ];
+
     public function run(): void
     {
-        $testimonials = [
-            [
-                'client_name' => 'Marcus Chen',
-                'designation' => 'VP of Manufacturing',
-                'company' => 'NovaPharma Global',
-                'content' => 'DO-RYT\'s continuous freeze drying systems have revolutionized our biological API production. The precision control and absolute reliability under 24/7 load are simply unmatched in the industry.',
-                'rating' => 5,
-                'status' => ContentStatus::Published,
-                'image' => 'avatar_marcus_1783126276782.png',
-            ],
-            [
-                'client_name' => 'Sarah Jenkins',
-                'designation' => 'Operations Director',
-                'company' => 'FreshHarvest Foods',
-                'content' => 'After integrating the automated vegetable processing line, our throughput increased by 40% while significantly reducing waste. The robust stainless steel construction exceeds all FDA hygiene requirements.',
-                'rating' => 5,
-                'status' => ContentStatus::Published,
-                'image' => null,
-            ],
-            [
-                'client_name' => 'Dr. Robert Muller',
-                'designation' => 'Lead Process Engineer',
-                'company' => 'ChemCorp Industries',
-                'content' => 'The custom ribbon blenders provided by DO-RYT handle our highly corrosive materials with zero degradation. Their engineering team understood our complex requirements from day one.',
-                'rating' => 5,
-                'status' => ContentStatus::Published,
-                'image' => null,
-            ],
-        ];
-
-        foreach ($testimonials as $test) {
-            $image = $test['image'];
-            unset($test['image']);
-
-            $model = Testimonial::updateOrCreate(
-                ['client_name' => $test['client_name']],
-                $test
+        foreach (self::TESTIMONIALS as $testimonial) {
+            Testimonial::updateOrCreate(
+                ['client_name' => $testimonial['client_name']],
+                $testimonial + ['rating' => 5, 'status' => ContentStatus::Published],
             );
-
-            if ($image && File::exists(public_path('img/'.$image))) {
-                if ($model->getMedia('avatars')->isEmpty()) {
-                    $model->addMedia(public_path('img/'.$image))
-                        ->preservingOriginal()
-                        ->toMediaCollection('avatars');
-                }
-            }
         }
     }
 }
