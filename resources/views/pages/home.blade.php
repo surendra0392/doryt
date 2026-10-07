@@ -289,7 +289,7 @@
                 
                 <div>
                     <span class="font-mono text-[10px] text-primary-600 uppercase tracking-widest block mb-4">[ COMPLIANCE INDEX ]</span>
-                    <h3 class="text-3xl font-display font-extrabold uppercase text-steel-950 mb-6 tracking-tight">Engineered to global compliance standards.</h3>
+                    <h3 class="text-3xl font-display font-extrabold uppercase text-steel-950 mb-6 tracking-tight">Engineered to national compliance standards.</h3>
                     <p class="text-steel-600 mb-10 leading-relaxed text-base">
                         Every DO-RYT system is designed, fabricated, and documented to seamlessly integrate into your validated environments without friction.
                     </p>
@@ -300,25 +300,25 @@
                             <span class="text-[9px] text-steel-500">9001:2015</span>
                         </div>
                         <div class="aspect-square bg-white border border-steel-200 rounded-none shadow-sm flex flex-col items-center justify-center p-4">
-                            <span class="font-display font-bold text-steel-900 text-2xl mb-1">CE</span>
+                            <span class="font-display font-bold text-steel-900 text-lg mb-1">GMP</span>
                             <span class="text-[9px] text-steel-500">Compliant</span>
                         </div>
                         <div class="aspect-square bg-white border border-steel-200 rounded-none shadow-sm flex flex-col items-center justify-center p-4">
-                            <span class="font-display font-bold text-steel-900 text-lg mb-1">cGMP</span>
+                            <span class="font-display font-bold text-steel-900 text-lg mb-1">FSSAI</span>
                             <span class="text-[9px] text-steel-500">Ready</span>
                         </div>
                         <div class="aspect-square bg-white border border-steel-200 rounded-none shadow-sm flex flex-col items-center justify-center p-4">
-                            <span class="font-display font-bold text-steel-900 text-lg mb-1">FDA</span>
+                            <span class="font-display font-bold text-steel-900 text-lg mb-1">ISI</span>
                             <span class="text-[9px] text-steel-500">Materials</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-6" data-reveal="stagger">
-                    <x-cards.statistic number="25" label="Years Heritage" suffix="+" />
-                    <x-cards.statistic number="1.2" label="Installations" suffix="K" />
-                    <x-cards.statistic number="45" label="Countries Served" />
-                    <x-cards.statistic number="24" label="Global Support" suffix="/7" />
+                    <x-cards.statistic number="15" label="Years Heritage" suffix="+" />
+                    <x-cards.statistic number="400" label="Installations" suffix="+" />
+                    <x-cards.statistic number="20" label="States Served" suffix="+" />
+                    <x-cards.statistic number="24" label="Pan-India Support" suffix="/7" />
                 </div>
             </div>
         </x-ui.container>
