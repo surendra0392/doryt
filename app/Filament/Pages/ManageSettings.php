@@ -228,17 +228,8 @@ class ManageSettings extends Page implements HasForms
                                     ->description('URLs to your company accounts (links will render dynamically in the footer).')
                                     ->schema([
                                         Grid::make(2)->schema([
-                                            TextInput::make('social_linkedin')
-                                                ->label('LinkedIn Page URL')
-                                                ->url(),
                                             TextInput::make('social_facebook')
                                                 ->label('Facebook Page URL')
-                                                ->url(),
-                                            TextInput::make('social_twitter')
-                                                ->label('X (formerly Twitter) URL')
-                                                ->url(),
-                                            TextInput::make('social_youtube')
-                                                ->label('YouTube Channel URL')
                                                 ->url(),
                                             TextInput::make('social_instagram')
                                                 ->label('Instagram Profile URL')

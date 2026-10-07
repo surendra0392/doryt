@@ -33,11 +33,8 @@ class SiteSettingSeeder extends Seeder
             ['group' => 'contact', 'key' => 'address', 'value' => "Plot # 6/8, Second Floor, Main Road,\nGandhi Nagar, APHB Colony,\nQutbullapur, Hyderabad, Telangana - 500 055.", 'type' => 'string'],
 
             // Social
-            ['group' => 'social', 'key' => 'linkedin', 'value' => 'https://linkedin.com/company/doryt', 'type' => 'string'],
-            ['group' => 'social', 'key' => 'facebook', 'value' => 'https://facebook.com/doryt', 'type' => 'string'],
-            ['group' => 'social', 'key' => 'twitter', 'value' => 'https://twitter.com/doryt', 'type' => 'string'],
-            ['group' => 'social', 'key' => 'youtube', 'value' => 'https://youtube.com/c/doryt', 'type' => 'string'],
-            ['group' => 'social', 'key' => 'instagram', 'value' => 'https://instagram.com/doryt', 'type' => 'string'],
+            ['group' => 'social', 'key' => 'facebook', 'value' => 'https://www.facebook.com/dorytmachinecorp', 'type' => 'string'],
+            ['group' => 'social', 'key' => 'instagram', 'value' => 'https://www.instagram.com/dorytmachinecorp', 'type' => 'string'],
 
             // SEO
             ['group' => 'seo', 'key' => 'meta_title_suffix', 'value' => '| DO-RYT Machine Corp', 'type' => 'string'],

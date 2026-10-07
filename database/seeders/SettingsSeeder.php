@@ -40,11 +40,8 @@ class SettingsSeeder extends Seeder
             ['group' => 'contact', 'key' => 'address', 'value' => "Plot # 6/8, Second Floor, Main Road,\nGandhi Nagar, APHB Colony,\nQutbullapur, Hyderabad, Telangana - 500 055."],
 
             // Social
-            ['group' => 'social', 'key' => 'linkedin', 'value' => 'https://linkedin.com/company/doryt'],
-            ['group' => 'social', 'key' => 'facebook', 'value' => 'https://facebook.com/doryt'],
-            ['group' => 'social', 'key' => 'twitter', 'value' => 'https://twitter.com/doryt'],
-            ['group' => 'social', 'key' => 'youtube', 'value' => 'https://youtube.com/@doryt'],
-            ['group' => 'social', 'key' => 'instagram', 'value' => 'https://instagram.com/doryt'],
+            ['group' => 'social', 'key' => 'facebook', 'value' => 'https://www.facebook.com/dorytmachinecorp'],
+            ['group' => 'social', 'key' => 'instagram', 'value' => 'https://www.instagram.com/dorytmachinecorp'],
         ];
 
         foreach ($settings as $setting) {
