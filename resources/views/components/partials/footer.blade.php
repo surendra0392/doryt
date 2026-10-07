@@ -70,7 +70,7 @@
                 <h4 class="text-white font-mono text-xs uppercase tracking-widest mb-6">[ COMPANY ]</h4>
                 <ul class="space-y-4 text-xs font-mono uppercase tracking-wider">
                     <li><a href="{{ route('about.index') }}" class="hover:text-primary-400 transition-colors">About Us</a></li>
-                    <li><a href="{{ route('about.index') }}#manufacturing" class="hover:text-primary-400 transition-colors">Manufacturing Facility</a></li>
+                    <li><a href="{{ route('galleries.index') }}" class="hover:text-primary-400 transition-colors">Media Gallery</a></li>
                     <li><a href="{{ route('certificates.index') }}" class="hover:text-primary-400 transition-colors">Certifications</a></li>
                     <li><a href="{{ route('contact.index') }}" class="hover:text-primary-400 transition-colors">Careers</a></li>
                     <li><a href="{{ route('contact.index') }}" class="hover:text-primary-400 transition-colors">Contact</a></li>
@@ -81,9 +81,9 @@
             <div>
                 <h4 class="text-white font-mono text-xs uppercase tracking-widest mb-6">[ HEADQUARTERS ]</h4>
                 <address class="not-italic text-xs font-mono uppercase tracking-wider space-y-4 text-steel-500">
-                    <p class="leading-relaxed">{!! nl2br(e(setting('contact.address', "123 Industrial Ave, Block B\nEngineering District, NY 10001"))) !!}</p>
-                    <p><a href="tel:{{ setting('contact.phone', '+1234567890') }}" class="hover:text-primary-400 text-white transition-colors">{{ setting('contact.phone', '+1 (234) 567-890') }}</a></p>
-                    <p><a href="mailto:{{ setting('contact.email', 'sales@doryt.com') }}" class="hover:text-primary-400 text-white transition-colors">{{ setting('contact.email', 'sales@doryt.com') }}</a></p>
+                    <p class="leading-relaxed">{!! nl2br(e(setting('contact.address', "Plot # 6/8, Second Floor, Main Road\nGandhi Nagar, APHB Colony\nQutbullapur, Hyderabad, Telangana - 500 055."))) !!}</p>
+                    <p><a href="tel:{{ preg_replace('/[^0-9+]/', '', setting('contact.phone', '+91 988 575 0066')) }}" class="hover:text-primary-400 text-white transition-colors">{{ setting('contact.phone', '+91 988 575 0066') }}</a></p>
+                    <p><a href="mailto:{{ setting('contact.email', 'sales@dorytmachinery.com') }}" class="hover:text-primary-400 text-white transition-colors">{{ setting('contact.email', 'sales@dorytmachinery.com') }}</a></p>
                 </address>
             </div>
         </div>

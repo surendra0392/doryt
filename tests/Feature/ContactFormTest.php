@@ -8,12 +8,15 @@ beforeEach(function () {
     $this->seed();
 });
 
-test('contact page loads successfully', function () {
+test('contact page loads successfully and displays updated contact information', function () {
     $response = $this->get(route('contact.index'));
 
     $response->assertStatus(200)
         ->assertSee('Contact')
-        ->assertSee('DO-RYT');
+        ->assertSee('DO-RYT')
+        ->assertSee('sales@dorytmachinery.com')
+        ->assertSee('+91 988 575 0066')
+        ->assertSee('Hyderabad');
 });
 
 test('contact form validation fails with empty input', function () {

@@ -27,7 +27,7 @@
                 <div class="w-full lg:w-1/2 p-2 bg-steel-150 border border-steel-200 rounded-none shadow-xl relative flex items-center justify-center">
                     <div class="absolute top-0 left-0 w-3 h-3 border-t border-l border-primary-500"></div>
                     <div class="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-primary-500"></div>
-                    <img src="{{ asset('img/fac_hq_1783126228186.png') }}" alt="DO-RYT Headquarters" class="w-full h-full object-cover rounded-none transition-all duration-700">
+                    <img src="{{ asset('img/complete_dehydration_process_line.webp') }}" alt="DO-RYT Turnkey Systems" class="w-full h-full object-cover rounded-none transition-all duration-700">
                 </div>
                 <div class="w-full lg:w-1/2 flex flex-col justify-between">
                     <div>
@@ -63,47 +63,4 @@
         </x-ui.container>
     </section>
 
-    {{-- MANUFACTURING EXCELLENCE --}}
-    <section class="py-24 bg-steel-50 border-t border-steel-200">
-        <x-ui.container>
-            <div class="text-center max-w-3xl mx-auto mb-16" data-reveal="fade-up">
-                <span class="font-mono text-[10px] text-primary-600 uppercase tracking-widest block mb-4">[ FACILITIES ]</span>
-                <h2 class="text-3xl md:text-4xl font-display font-extrabold text-steel-950 uppercase tracking-tight mb-4">State-of-the-Art Complex</h2>
-                <p class="text-sm text-steel-600 leading-relaxed text-balance">Our 100,000 sq.ft. manufacturing complex integrates advanced CNC machining, robotic welding, and automated assembly.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-reveal="stagger">
-                <div class="bg-white border border-steel-200 rounded-none overflow-hidden group p-2">
-                    <div class="aspect-4/3 overflow-hidden bg-steel-100 border border-steel-150">
-                        <img src="{{ asset('img/fac_production_1783126256969.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Production Floor">
-                    </div>
-                    <div class="p-6">
-                        <span class="font-mono text-[9px] text-steel-400 uppercase tracking-widest block mb-1.5">[ UNIT_01 ]</span>
-                        <h3 class="text-lg font-display font-bold text-steel-950 uppercase tracking-tight mb-2">Precision Machining</h3>
-                        <p class="text-steel-650 text-xs leading-relaxed">Utilizing 5-axis CNC centers for millimeter-perfect component manufacturing.</p>
-                    </div>
-                </div>
-                <div class="bg-white border border-steel-200 rounded-none overflow-hidden group p-2">
-                    <div class="aspect-4/3 overflow-hidden bg-steel-100 border border-steel-150">
-                        <img src="{{ asset('img/fac_engineering_1783126246830.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Engineering Team">
-                    </div>
-                    <div class="p-6">
-                        <span class="font-mono text-[9px] text-steel-400 uppercase tracking-widest block mb-1.5">[ UNIT_02 ]</span>
-                        <h3 class="text-lg font-display font-bold text-steel-950 uppercase tracking-tight mb-2">R&D Center</h3>
-                        <p class="text-steel-650 text-xs leading-relaxed">Dedicated laboratory for developing custom freeze-drying recipes and thermal profiles.</p>
-                    </div>
-                </div>
-                <div class="bg-white border border-steel-200 rounded-none overflow-hidden group p-2">
-                    <div class="aspect-4/3 overflow-hidden bg-steel-100 border border-steel-150">
-                        <img src="{{ asset('img/fac_testing_1783126267057.png') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Quality Testing">
-                    </div>
-                    <div class="p-6">
-                        <span class="font-mono text-[9px] text-steel-400 uppercase tracking-widest block mb-1.5">[ UNIT_03 ]</span>
-                        <h3 class="text-lg font-display font-bold text-steel-950 uppercase tracking-tight mb-2">Quality Assurance</h3>
-                        <p class="text-steel-650 text-xs leading-relaxed">Stringent FAT (Factory Acceptance Testing) including vacuum leak and pressure vessel diagnostics.</p>
-                    </div>
-                </div>
-            </div>
-        </x-ui.container>
-    </section>
 </x-layouts.app>

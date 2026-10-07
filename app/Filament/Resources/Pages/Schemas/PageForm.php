@@ -277,14 +277,6 @@ class PageForm
                                                 Textarea::make('description'),
                                             ]),
 
-                                        Builder\Block::make('home_gallery')
-                                            ->label('Home - Factory Gallery')
-                                            ->icon('heroicon-m-photo')
-                                            ->schema([
-                                                TextInput::make('badge')->default('[ SYSTEM CONSOLE ]'),
-                                                TextInput::make('title')->default('State-of-the-art facilities driving global innovation.'),
-                                            ]),
-
                                         Builder\Block::make('home_testimonials')
                                             ->label('Home - Testimonials')
                                             ->icon('heroicon-m-chat-bubble-bottom-center-text')

@@ -31,14 +31,19 @@
     @endif
     <link rel="canonical" href="{{ url()->current() }}">
 
-    <!-- Favicon -->
+    <!-- Favicon & Touch Icons -->
     @if (setting('general.favicon'))
         <link rel="icon" type="image/png" href="{{ Storage::disk('public')->url(setting('general.favicon')) }}">
+    @else
+        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     @endif
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     <!-- App Icon -->
     @if (setting('general.appicon'))
         <link rel="apple-touch-icon" href="{{ Storage::disk('public')->url(setting('general.appicon')) }}">
+    @else
+        <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
     @endif
 
     @php
@@ -70,13 +75,22 @@
     {
       "@@context": "https://schema.org",
       "@@type": "Organization",
-      "name": "DO-RYT Machine Corp",
+      "name": "{{ setting('general.site_name', 'DO-RYT Machine Corp') }}",
       "url": "{{ url('/') }}",
       "logo": "{{ asset('img/logo.png') }}",
       "contactPoint": {
         "@@type": "ContactPoint",
-        "telephone": "+91-98765-43210",
-        "contactType": "customer service"
+        "telephone": "{{ setting('contact.phone', '+91 988 575 0066') }}",
+        "email": "{{ setting('contact.email', 'sales@dorytmachinery.com') }}",
+        "contactType": "sales and customer service"
+      },
+      "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "Plot # 6/8, Second Floor, Main Road, Gandhi Nagar, APHB Colony, Qutbullapur",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "postalCode": "500055",
+        "addressCountry": "IN"
       }
     }
     </script>

@@ -20,6 +20,13 @@ class SettingsSeeder extends Seeder
             // General
             ['group' => 'general', 'key' => 'site_name', 'value' => 'DO-RYT Machine Corp'],
             ['group' => 'general', 'key' => 'site_description', 'value' => 'Leading manufacturer of industrial freeze dryers, food processing equipment, and cold storage solutions.'],
+            ['group' => 'general', 'key' => 'site_logo', 'value' => 'settings/logo_white.png'],
+            ['group' => 'general', 'key' => 'footer_logo', 'value' => 'settings/logo_white.png'],
+            ['group' => 'general', 'key' => 'preloader', 'value' => 'settings/logo_white.png'],
+            ['group' => 'general', 'key' => 'admin_logo_light', 'value' => 'settings/logo_color.png'],
+            ['group' => 'general', 'key' => 'admin_logo_dark', 'value' => 'settings/logo_white.png'],
+            ['group' => 'general', 'key' => 'favicon', 'value' => 'settings/favicon.png'],
+            ['group' => 'general', 'key' => 'appicon', 'value' => 'settings/appicon.png'],
 
             // SEO
             ['group' => 'seo', 'key' => 'meta_title_suffix', 'value' => '| DO-RYT Machine Corp'],
@@ -27,10 +34,10 @@ class SettingsSeeder extends Seeder
             ['group' => 'seo', 'key' => 'meta_keywords', 'value' => 'freeze dryer, food processing, cold storage, industrial equipment, DO-RYT'],
 
             // Contact
-            ['group' => 'contact', 'key' => 'email', 'value' => 'info@doryt.com'],
-            ['group' => 'contact', 'key' => 'phone', 'value' => '+91 98765 43210'],
-            ['group' => 'contact', 'key' => 'whatsapp', 'value' => '+91 98765 43210'],
-            ['group' => 'contact', 'key' => 'address', 'value' => 'Industrial Area, Phase II, Chennai, Tamil Nadu 600058, India'],
+            ['group' => 'contact', 'key' => 'email', 'value' => 'sales@dorytmachinery.com'],
+            ['group' => 'contact', 'key' => 'phone', 'value' => '+91 988 575 0066'],
+            ['group' => 'contact', 'key' => 'whatsapp', 'value' => '+919885750066'],
+            ['group' => 'contact', 'key' => 'address', 'value' => "Plot # 6/8, Second Floor, Main Road,\nGandhi Nagar, APHB Colony,\nQutbullapur, Hyderabad, Telangana - 500 055."],
 
             // Social
             ['group' => 'social', 'key' => 'linkedin', 'value' => 'https://linkedin.com/company/doryt'],
@@ -46,5 +53,7 @@ class SettingsSeeder extends Seeder
                 ['value' => $setting['value']]
             );
         }
+
+        Setting::clearCache();
     }
 }

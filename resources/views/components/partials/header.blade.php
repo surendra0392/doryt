@@ -43,12 +43,12 @@
 
             <!-- Desktop CTA -->
             <div class="hidden lg:flex items-center gap-6">
-                <a href="tel:{{ setting('contact.phone', '+1234567890') }}" class="font-mono text-xs text-steel-400 hover:text-white transition-colors tracking-wider flex items-center gap-2">
+                <a href="tel:{{ preg_replace('/[^0-9+]/', '', setting('contact.phone', '+91 988 575 0066')) }}" class="font-mono text-xs text-steel-400 hover:text-white transition-colors tracking-wider flex items-center gap-2">
                     <span class="relative flex h-2 w-2">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
                     </span>
-                    {{ setting('contact.phone', '+1 (234) 567-890') }}
+                    {{ setting('contact.phone', '+91 988 575 0066') }}
                 </a>
                 <x-ui.button href="{{ route('contact.index') }}" variant="primary" size="sm">Request Consultation</x-ui.button>
             </div>

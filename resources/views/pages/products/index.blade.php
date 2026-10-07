@@ -3,7 +3,7 @@
     <section class="relative bg-steel-950 pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden border-b border-steel-900"
              style="background-image: radial-gradient(var(--color-steel-900) 1px, transparent 1px); background-size: 24px 24px;">
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('img/fac_production_1783126256969.png') }}" alt="DO-RYT Production" class="w-full h-full object-cover opacity-10 mix-blend-overlay">
+            <img src="{{ asset('img/complete_dehydration_process_line.webp') }}" alt="DO-RYT Production" class="w-full h-full object-cover opacity-15 mix-blend-overlay">
             <div class="absolute inset-0 bg-linear-to-t from-steel-950 via-steel-950/80 to-transparent"></div>
         </div>
         <x-ui.container class="relative z-10" data-reveal="fade-up">

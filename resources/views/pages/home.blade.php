@@ -32,7 +32,7 @@
                 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <x-ui.button href="{{ route('products.index') }}" variant="primary" size="lg">Explore Our Systems</x-ui.button>
-                    <x-ui.button href="{{ route('about.index') }}#manufacturing" variant="outline" size="lg" class="border-steel-800 text-white hover:bg-steel-900">View Capabilities</x-ui.button>
+                    <x-ui.button href="{{ route('about.index') }}" variant="outline" size="lg" class="border-steel-800 text-white hover:bg-steel-900">View Capabilities</x-ui.button>
                 </div>
 
                 {{-- Decs --}}
@@ -323,75 +323,7 @@
             </div>
         </x-ui.container>
     </section>
-
-    {{-- 11. Factory Gallery (Blueprint Grid Console) --}}
-    <section class="py-24 bg-white relative"
-             style="background-image: linear-gradient(var(--color-steel-100) 1px, transparent 1px), linear-gradient(90deg, var(--color-steel-100) 1px, transparent 1px); background-size: 40px 40px;">
-        <x-ui.container>
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6" data-reveal="fade-up">
-                <div>
-                    <span class="font-mono text-[10px] text-primary-600 uppercase tracking-widest block mb-4">[ SYSTEM CONSOLE ]</span>
-                    <h2 class="text-3xl font-display font-extrabold uppercase tracking-tight text-steel-950 mb-0">
-                        State-of-the-art facilities driving global innovation.
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Blueprint Grid Console -->
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[250px]" data-reveal="stagger">
-                <div class="md:col-span-2 md:row-span-2 rounded-none border border-steel-250 p-2 bg-white relative group">
-                    {{-- Blue-print style borders & labels --}}
-                    <div class="absolute top-4 left-4 z-10 font-mono text-[9px] bg-steel-950/80 border border-steel-800 text-white px-2 py-0.5 uppercase tracking-widest">[ SEC_01 // COR_HQ ]</div>
-                    <div class="absolute top-2 left-2 w-2 h-2 border-t border-l border-primary-500"></div>
-                    <div class="absolute top-2 right-2 w-2 h-2 border-t border-r border-primary-500"></div>
-                    <div class="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-primary-500"></div>
-                    <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
-                    
-                    <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_hq_1783126228186.png') }}" alt="Factory Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
-                    </div>
-                </div>
-                
-                <div class="rounded-none border border-steel-250 p-2 bg-white relative group">
-                    <div class="absolute top-4 left-4 z-10 font-mono text-[9px] bg-steel-950/80 border border-steel-800 text-white px-2 py-0.5 uppercase tracking-widest">[ SEC_02 // ENG_LAB ]</div>
-                    <div class="absolute top-2 left-2 w-2 h-2 border-t border-l border-primary-500"></div>
-                    <div class="absolute top-2 right-2 w-2 h-2 border-t border-r border-primary-500"></div>
-                    <div class="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-primary-500"></div>
-                    <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
-
-                    <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_engineering_1783126246830.png') }}" alt="Engineering" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
-                    </div>
-                </div>
-                
-                <div class="rounded-none border border-steel-250 p-2 bg-white relative group">
-                    <div class="absolute top-4 left-4 z-10 font-mono text-[9px] bg-steel-950/80 border border-steel-800 text-white px-2 py-0.5 uppercase tracking-widest">[ SEC_03 // PROD_FLR ]</div>
-                    <div class="absolute top-2 left-2 w-2 h-2 border-t border-l border-primary-500"></div>
-                    <div class="absolute top-2 right-2 w-2 h-2 border-t border-r border-primary-500"></div>
-                    <div class="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-primary-500"></div>
-                    <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
-
-                    <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_production_1783126256969.png') }}" alt="Production" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
-                    </div>
-                </div>
-                
-                <div class="md:col-span-2 rounded-none border border-steel-250 p-2 bg-white relative group">
-                    <div class="absolute top-4 left-4 z-10 font-mono text-[9px] bg-steel-950/80 border border-steel-800 text-white px-2 py-0.5 uppercase tracking-widest">[ SEC_04 // TST_BAY ]</div>
-                    <div class="absolute top-2 left-2 w-2 h-2 border-t border-l border-primary-500"></div>
-                    <div class="absolute top-2 right-2 w-2 h-2 border-t border-r border-primary-500"></div>
-                    <div class="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-primary-500"></div>
-                    <div class="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-primary-500"></div>
-
-                    <div class="w-full h-full overflow-hidden bg-steel-900">
-                        <img loading="lazy" src="{{ asset('img/fac_testing_1783126267057.png') }}" alt="Testing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
-                    </div>
-                </div>
-            </div>
-        </x-ui.container>
-    </section>
-
-    {{-- 12. Customer Testimonials --}}
+    {{-- 11. Customer Testimonials --}}
     <section class="py-24 bg-steel-950 text-white relative overflow-hidden"
              style="background-image: radial-gradient(var(--color-steel-900) 1px, transparent 1px); background-size: 24px 24px;">
         <div class="absolute top-0 right-0 w-96 h-96 bg-primary-900/5 blur-3xl rounded-full pointer-events-none"></div>

@@ -41,7 +41,7 @@ class InquiryForm
                                         ->placeholder('client@example.com'),
                                     TextInput::make('phone')
                                         ->tel()
-                                        ->placeholder('+91-98765-43210'),
+                                        ->placeholder('+91 988 575 0066'),
                                 ]),
                                 Textarea::make('message')
                                     ->required()

@@ -19,7 +19,7 @@ class BlogController extends Controller
                 'excerpt' => 'Exploring how new cascade refrigeration systems are increasing throughput for API manufacturing.',
                 'date' => 'July 15, 2026',
                 'category' => 'Technology',
-                'image' => 'fac_engineering_1783126246830.png',
+                'image' => 'vacuum_freeze_dryer.webp',
             ],
             (object) [
                 'title' => 'Optimizing Food Processing Lines for Minimal Waste',
@@ -27,7 +27,7 @@ class BlogController extends Controller
                 'excerpt' => 'How continuous monitoring and precise cutting technology can reduce raw material waste by 15%.',
                 'date' => 'June 28, 2026',
                 'category' => 'Best Practices',
-                'image' => 'fac_production_1783126256969.png',
+                'image' => 'complete_dehydration_process_line.webp',
             ],
             (object) [
                 'title' => 'DO-RYT Installs Flagship FD-10000 in Europe',
@@ -35,7 +35,7 @@ class BlogController extends Controller
                 'excerpt' => 'Our engineering team successfully commissioned our largest vacuum freeze dryer yet for a major nutraceutical client.',
                 'date' => 'June 10, 2026',
                 'category' => 'Company News',
-                'image' => 'flagship_machine_1783126168912.png',
+                'image' => 'ftd_24_tray_dryer.webp',
             ],
         ]);
 
@@ -50,7 +50,7 @@ class BlogController extends Controller
             'content' => '<p>This is a complete technical article regarding the recent advancements in DO-RYT machinery technology. As a global leader in engineering solutions, we continuously push the boundaries of what is possible in thermal processing and material handling.</p><p>Our latest innovations include AI-driven predictive maintenance and enhanced CIP (Clean-in-Place) protocols that reduce downtime significantly between production batches.</p>',
             'date' => 'July 15, 2026',
             'category' => 'Technology',
-            'image' => 'fac_engineering_1783126246830.png',
+            'image' => 'vacuum_freeze_dryer.webp',
         ];
 
         return view('pages.blogs.show', compact('post'));

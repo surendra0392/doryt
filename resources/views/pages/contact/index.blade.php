@@ -24,7 +24,7 @@
                 
                 {{-- Technical metadata badge --}}
                 <div class="mt-8 flex flex-wrap gap-4 text-xs font-mono text-steel-500">
-                    <span>[ SITE_LOC: 23.0225° N, 72.5714° E ]</span>
+                    <span>[ SITE_LOC: 17.5169° N, 78.4357° E ]</span>
                     <span>[ DOC_REF: DRY-CNCT-V2.0 ]</span>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                                                name="phone" 
                                                id="phone" 
                                                value="{{ old('phone') }}"
-                                               placeholder="e.g., +91 98765 43210" 
+                                               placeholder="e.g., +91 988 575 0066" 
                                                @class([
                                                    'w-full bg-steel-900/50 border py-3 pl-10 pr-4 text-white placeholder-steel-600 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500/20 transition-all font-mono text-sm',
                                                    'border-red-500' => $errors->has('phone'),
@@ -244,7 +244,7 @@
                                     <div>
                                         <h4 class="font-mono text-xs uppercase tracking-wider text-steel-500 mb-1.5">[ LOC: HEADQUARTERS ]</h4>
                                         <p class="text-steel-900 text-sm font-semibold leading-relaxed font-sans">
-                                            {!! nl2br(e(setting('contact.address', "Plot No 45, Industrial Area Phase II\nAhmedabad, Gujarat\nIndia - 380015"))) !!}
+                                            {!! nl2br(e(setting('contact.address', "Plot # 6/8, Second Floor, Main Road\nGandhi Nagar, APHB Colony\nQutbullapur, Hyderabad, Telangana - 500 055."))) !!}
                                         </p>
                                     </div>
                                 </div>
@@ -257,7 +257,7 @@
                                     <div>
                                         <h4 class="font-mono text-xs uppercase tracking-wider text-steel-500 mb-1.5">[ COMM: ELECTRONIC MAIL ]</h4>
                                         <div class="space-y-1 text-sm font-semibold text-steel-900 font-sans">
-                                            <p>Email: <a href="mailto:{{ setting('contact.email', 'sales@doryt.com') }}" class="hover:text-primary-600 transition-colors">{{ setting('contact.email', 'sales@doryt.com') }}</a></p>
+                                            <p>Email: <a href="mailto:{{ setting('contact.email', 'sales@dorytmachinery.com') }}" class="hover:text-primary-600 transition-colors">{{ setting('contact.email', 'sales@dorytmachinery.com') }}</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -270,7 +270,7 @@
                                     <div>
                                         <h4 class="font-mono text-xs uppercase tracking-wider text-steel-500 mb-1.5">[ VOICE: TELEPHONY ]</h4>
                                         <p class="text-steel-900 text-sm font-semibold font-sans">
-                                            Sales & Support: <a href="tel:{{ setting('contact.phone', '+919876543210') }}" class="hover:text-primary-600 transition-colors">{{ setting('contact.phone', '+91 98765 43210') }}</a>
+                                            Sales & Support: <a href="tel:{{ preg_replace('/[^0-9+]/', '', setting('contact.phone', '+91 988 575 0066')) }}" class="hover:text-primary-600 transition-colors">{{ setting('contact.phone', '+91 988 575 0066') }}</a>
                                         </p>
                                     </div>
                                 </div>
@@ -279,7 +279,7 @@
 
                         {{-- WhatsApp Widget --}}
                         <div class="mt-12 border-t border-steel-200 pt-8">
-                            <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', setting('contact.whatsapp', setting('contact.phone', '919876543210'))) }}" 
+                            <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', setting('contact.whatsapp', setting('contact.phone', '+919885750066'))) }}" 
                                target="_blank" 
                                rel="noopener noreferrer" 
                                class="flex items-center justify-center w-full bg-[#128C7E] hover:bg-[#075E54] text-white font-mono text-xs uppercase tracking-wider py-4 px-6 transition-all duration-300 hover:scale-[1.01] active:scale-95">

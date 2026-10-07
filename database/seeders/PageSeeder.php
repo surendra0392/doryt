@@ -135,31 +135,7 @@ class PageSeeder extends Seeder
                             'stat_4_label' => '[ GLOBAL SUPPORT ]',
                         ],
                     ],
-                    [
-                        'type' => 'about_facilities',
-                        'data' => [
-                            'badge' => '[ FACILITIES ]',
-                            'title' => 'State-of-the-Art Complex',
-                            'description' => 'Our 100,000 sq.ft. manufacturing complex integrates advanced CNC machining, robotic welding, and automated assembly.',
-                            'facilities' => [
-                                [
-                                    'badge' => '[ UNIT_01 ]',
-                                    'title' => 'Precision Machining',
-                                    'description' => 'Utilizing 5-axis CNC centers for millimeter-perfect component manufacturing.',
-                                ],
-                                [
-                                    'badge' => '[ UNIT_02 ]',
-                                    'title' => 'R&D Center',
-                                    'description' => 'Dedicated laboratory for developing custom freeze-drying recipes and thermal profiles.',
-                                ],
-                                [
-                                    'badge' => '[ UNIT_03 ]',
-                                    'title' => 'Quality Assurance',
-                                    'description' => 'Stringent FAT (Factory Acceptance Testing) including vacuum leak and pressure vessel diagnostics.',
-                                ],
-                            ],
-                        ],
-                    ],
+
                     [
                         'type' => 'cta',
                         'data' => [

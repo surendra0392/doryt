@@ -19,6 +19,7 @@ class HomeController extends Controller
     public function index(): View
     {
         $categories = Category::with('media')
+            ->withCount('products')
             ->orderBy('sort_order')
             ->take(4)
             ->get();

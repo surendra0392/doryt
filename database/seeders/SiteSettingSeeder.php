@@ -18,14 +18,19 @@ class SiteSettingSeeder extends Seeder
             ['group' => 'general', 'key' => 'bg_alt', 'value' => '#f3f4f6', 'type' => 'string'],
             ['group' => 'general', 'key' => 'text_main', 'value' => '#0f2043', 'type' => 'string'],
             ['group' => 'general', 'key' => 'text_muted', 'value' => '#6b7280', 'type' => 'string'],
-            ['group' => 'general', 'key' => 'site_logo', 'value' => 'settings/logo.svg', 'type' => 'string'],
-            ['group' => 'general', 'key' => 'favicon', 'value' => 'settings/favicon.ico', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'site_logo', 'value' => 'settings/logo_white.png', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'footer_logo', 'value' => 'settings/logo_white.png', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'preloader', 'value' => 'settings/logo_white.png', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'admin_logo_light', 'value' => 'settings/logo_color.png', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'admin_logo_dark', 'value' => 'settings/logo_white.png', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'favicon', 'value' => 'settings/favicon.png', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'appicon', 'value' => 'settings/appicon.png', 'type' => 'string'],
 
             // Contact
-            ['group' => 'contact', 'key' => 'email', 'value' => 'sales@doryt.com', 'type' => 'string'],
-            ['group' => 'contact', 'key' => 'phone', 'value' => '+1 (234) 567-890', 'type' => 'string'],
-            ['group' => 'contact', 'key' => 'whatsapp', 'value' => '+1234567890', 'type' => 'string'],
-            ['group' => 'contact', 'key' => 'address', 'value' => "123 Industrial Ave, Block B\nEngineering District, NY 10001", 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'email', 'value' => 'sales@dorytmachinery.com', 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'phone', 'value' => '+91 988 575 0066', 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'whatsapp', 'value' => '+919885750066', 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'address', 'value' => "Plot # 6/8, Second Floor, Main Road,\nGandhi Nagar, APHB Colony,\nQutbullapur, Hyderabad, Telangana - 500 055.", 'type' => 'string'],
 
             // Social
             ['group' => 'social', 'key' => 'linkedin', 'value' => 'https://linkedin.com/company/doryt', 'type' => 'string'],

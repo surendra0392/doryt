@@ -48,7 +48,7 @@ class PageController extends Controller
         }
 
         // In production, dispatch a Mailable to the sales team here
-        // e.g. Mail::to('sales@doryt.com')->send(new ContactFormMail($data));
+        // e.g. Mail::to(setting('contact.email', 'sales@dorytmachinery.com'))->send(new ContactFormMail($data));
 
         // Log the inquiry
         Log::info('New contact inquiry from '.$data['email'], $data);

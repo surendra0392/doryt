@@ -30,8 +30,8 @@
         
         <div class="p-6 bg-steel-800 rounded-lg border border-steel-700">
             <h3 class="text-sm uppercase tracking-wider text-steel-500 font-semibold mb-2">Need Immediate Assistance?</h3>
-            <p class="text-white">Call us at <a href="tel:+18005550199" class="text-primary-500 hover:text-primary-400 font-medium transition-colors">+1-800-555-0199</a></p>
-            <p class="text-white mt-1">Or email <a href="mailto:support@doryt.com" class="text-primary-500 hover:text-primary-400 font-medium transition-colors">support@doryt.com</a></p>
+            <p class="text-white">Call us at <a href="tel:+919885750066" class="text-primary-500 hover:text-primary-400 font-medium transition-colors">+91 988 575 0066</a></p>
+            <p class="text-white mt-1">Or email <a href="mailto:sales@dorytmachinery.com" class="text-primary-500 hover:text-primary-400 font-medium transition-colors">sales@dorytmachinery.com</a></p>
         </div>
         
     </div>
