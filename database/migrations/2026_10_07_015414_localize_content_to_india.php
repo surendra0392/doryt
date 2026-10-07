@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
@@ -13,6 +14,11 @@ return new class extends Migration
     public function up(): void
     {
         // Truncate tables to ensure a clean slate for the seeders
+        Schema::disableForeignKeyConstraints();
+
+        if (Schema::hasTable('category_product')) { DB::table('category_product')->truncate(); }
+        if (Schema::hasTable('industry_product')) { DB::table('industry_product')->truncate(); }
+
         DB::table('settings')->truncate();
         DB::table('site_settings')->truncate();
         DB::table('pages')->truncate();
@@ -22,6 +28,8 @@ return new class extends Migration
         DB::table('products')->truncate();
         DB::table('categories')->truncate();
         DB::table('seo_metadata')->truncate();
+
+        Schema::enableForeignKeyConstraints();
         // Run the modified seeders
         Artisan::call('db:seed', ['--class' => 'SettingsSeeder', '--force' => true]);
         Artisan::call('db:seed', ['--class' => 'SiteSettingSeeder', '--force' => true]);
