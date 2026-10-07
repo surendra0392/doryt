@@ -37,7 +37,7 @@ class IndustrySeeder extends Seeder
             [
                 'name' => 'Dairy',
                 'short_description' => 'Drying and processing solutions for milk powder, whey protein, and dairy ingredient production.',
-                'full_description' => 'Specialized drying and evaporation systems for the dairy industry including spray dryers, fluid bed dryers, and evaporators for milk powder, whey protein concentrate, casein, and other dairy ingredients. Fully CIP-able and FDA-compliant.',
+                'full_description' => 'Specialized drying and evaporation systems for the dairy industry including spray dryers, fluid bed dryers, and evaporators for milk powder, whey protein concentrate, casein, and other dairy ingredients. Fully CIP-able and FSSAI-compliant.',
                 'sort_order' => 4,
                 'image' => 'industries/dairy.jpg',
             ],

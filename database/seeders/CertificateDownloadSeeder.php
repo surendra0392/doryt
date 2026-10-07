@@ -14,7 +14,7 @@ class CertificateDownloadSeeder extends Seeder
             ['title' => 'ISO 9001:2015', 'description' => 'Quality Management System standards across design, fabrication, and testing processes.', 'icon' => 'check-badge'],
             ['title' => 'CE Marking', 'description' => 'European Conformity standards met for all electrical panels and pneumatic control units.', 'icon' => 'shield-check'],
             ['title' => 'cGMP Compliant', 'description' => 'Current Good Manufacturing Practice designs for pharmaceutical and food process equipment.', 'icon' => 'clipboard-document-check'],
-            ['title' => 'FDA Approved Materials', 'description' => 'Food-grade premium 316L/304 stainless steel and non-reactive polymers for all product contact parts.', 'icon' => 'star'],
+            ['title' => 'FSSAI Approved Materials', 'description' => 'Food-grade premium 316L/304 stainless steel and non-reactive polymers for all product contact parts.', 'icon' => 'star'],
         ];
 
         foreach ($certs as $index => $cert) {

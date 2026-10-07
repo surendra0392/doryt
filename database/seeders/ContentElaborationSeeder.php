@@ -21,7 +21,7 @@ class ContentElaborationSeeder extends Seeder
         $industries = [
             'Fruits & Vegetables' => [
                 'short_description' => 'Advanced processing, dehydration, and preservation systems for agricultural produce.',
-                'full_description' => '<p>The global demand for high-quality, long-lasting fruit and vegetable products requires robust processing infrastructure. DO-RYT provides end-to-end processing lines, from sorting and washing to advanced dehydration and freeze-drying.</p><p>Our systems are designed to maximize nutrient retention, preserve natural colors, and extend shelf life while maintaining strict hygiene standards. Whether you are processing chips, powders, or dried whole fruits, our engineering team ensures optimal yield and energy efficiency.</p>',
+                'full_description' => '<p>The growing demand for high-quality, long-lasting fruit and vegetable products requires robust processing infrastructure. DO-RYT provides end-to-end processing lines, from sorting and washing to advanced dehydration and freeze-drying.</p><p>Our systems are designed to maximize nutrient retention, preserve natural colors, and extend shelf life while maintaining strict hygiene standards. Whether you are processing chips, powders, or dried whole fruits, our engineering team ensures optimal yield and energy efficiency.</p>',
             ],
             'Seafood' => [
                 'short_description' => 'Industrial chilling, freezing, and processing equipment for marine products.',
@@ -29,7 +29,7 @@ class ContentElaborationSeeder extends Seeder
             ],
             'Meat & Poultry' => [
                 'short_description' => 'High-capacity meat processing, slicing, and freezing systems.',
-                'full_description' => '<p>DO-RYT delivers comprehensive meat and poultry processing systems that prioritize throughput, safety, and precision. From initial cutting and portioning to deep freezing and packaging, our equipment is designed for high-volume industrial environments.</p><p>Our heavy-duty processing machinery ensures consistent product quality while our advanced refrigeration technology provides rapid temperature pulldown to inhibit bacterial growth and meet global food safety standards.</p>',
+                'full_description' => '<p>DO-RYT delivers comprehensive meat and poultry processing systems that prioritize throughput, safety, and precision. From initial cutting and portioning to deep freezing and packaging, our equipment is designed for high-volume industrial environments.</p><p>Our heavy-duty processing machinery ensures consistent product quality while our advanced refrigeration technology provides rapid temperature pulldown to inhibit bacterial growth and meet national food safety standards.</p>',
             ],
             'Dairy' => [
                 'short_description' => 'Sanitary processing and thermal treatment equipment for dairy applications.',
@@ -49,7 +49,7 @@ class ContentElaborationSeeder extends Seeder
             ],
             'Agro Processing' => [
                 'short_description' => 'Bulk processing, drying, and storage solutions for post-harvest agriculture.',
-                'full_description' => '<p>Post-harvest loss is a major challenge that DO-RYT mitigates through our heavy-duty agro-processing equipment. We manufacture high-capacity rotary drum dryers, continuous belt dryers, and bulk handling systems.</p><p>Our solutions help agricultural cooperatives and large-scale farming operations stabilize their harvests, reduce moisture content to safe storage levels, and prepare commodities for global export.</p>',
+                'full_description' => '<p>Post-harvest loss is a major challenge that DO-RYT mitigates through our heavy-duty agro-processing equipment. We manufacture high-capacity rotary drum dryers, continuous belt dryers, and bulk handling systems.</p><p>Our solutions help agricultural cooperatives and large-scale farming operations stabilize their harvests, reduce moisture content to safe storage levels, and prepare commodities for export.</p>',
             ],
             'Bio Fertilizers' => [
                 'short_description' => 'Industrial blending, granulation, and drying systems for organic inputs.',
@@ -121,7 +121,7 @@ class ContentElaborationSeeder extends Seeder
             $full = "
                 <p>The <strong>{$name}</strong> represents DO-RYT's commitment to engineering excellence. Designed for demanding industrial environments, this system provides unparalleled reliability and performance.</p>
                 <p>Constructed from high-grade stainless steel (SS-304/SS-316L), the equipment features advanced PLC-based control systems, allowing operators to monitor and adjust critical parameters in real-time. The ergonomic design ensures ease of maintenance and adherence to strict Clean-In-Place (CIP) protocols.</p>
-                <p>By optimizing energy consumption and maximizing throughput, the {$name} delivers a rapid return on investment while elevating your production capabilities to global standards.</p>
+                <p>By optimizing energy consumption and maximizing throughput, the {$name} delivers a rapid return on investment while elevating your production capabilities to industry standards.</p>
             ";
 
             $applications = [
@@ -135,7 +135,7 @@ class ContentElaborationSeeder extends Seeder
                 'Heavy-duty SS-304 / SS-316L construction',
                 'Advanced HMI / PLC automation controls',
                 'Energy-optimized thermodynamic design',
-                'Compliance with FDA and CE sanitary standards',
+                'Compliance with FSSAI and GMP sanitary standards',
                 'Minimal footprint with maximum throughput',
             ];
 

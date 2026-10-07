@@ -22,8 +22,8 @@ class PageSeeder extends Seeder
                         'type' => 'hero',
                         'data' => [
                             'badge' => 'System Status: Active // Thermal Core Online',
-                            'headline' => "Precision\nEngineering.\nGlobal Scale.",
-                            'description' => 'DO-RYT Machine Corp architects world-class industrial dryers, dehydrators, food processing lines, and cold chain systems for the pharmaceutical, food, and industrial sectors.',
+                            'headline' => "Precision\nEngineering.\nNational Scale.",
+                            'description' => 'DO-RYT Machine Corp architects industry-leading industrial dryers, dehydrators, food proGMPssing lines, and cold chain systems for the pharmaGMPutical, food, and industrial sectors.',
                             'buttons' => [
                                 ['label' => 'Explore Our Systems', 'url' => '/products', 'variant' => 'primary'],
                                 ['label' => 'View Capabilities', 'url' => '/about#manufacturing', 'variant' => 'outline'],
@@ -35,7 +35,7 @@ class PageSeeder extends Seeder
                         'type' => 'entity_list',
                         'data' => [
                             'badge' => '[ CORE SYSTEMS ]',
-                            'title' => 'Systems engineered for absolute operational dominance.',
+                            'title' => 'Systems engineered for absolute operational dominanGMP.',
                             'entity_type' => 'categories',
                             'limit' => 4,
                         ],
@@ -50,12 +50,12 @@ class PageSeeder extends Seeder
                                 [
                                     'icon' => 'heroicon-o-fire',
                                     'title' => 'Thermal Equilibrium',
-                                    'description' => 'Advanced PLC-controlled heat distribution prevents hot-spots and ensures uniform drying across all batches.',
+                                    'description' => 'AdvanGMPd PLC-controlled heat distribution prevents hot-spots and ensures uniform drying across all batches.',
                                 ],
                                 [
                                     'icon' => 'heroicon-o-shield-check',
-                                    'title' => 'Pharmaceutical Grade',
-                                    'description' => 'Built with 316L stainless steel, fully compliant with FDA and GMP standards for food and drug processing.',
+                                    'title' => 'PharmaGMPutical Grade',
+                                    'description' => 'Built with 316L stainless steel, fully compliant with FSSAI and GMP standards for food and drug proGMPssing.',
                                 ],
                                 [
                                     'icon' => 'heroicon-o-bolt',
@@ -69,11 +69,11 @@ class PageSeeder extends Seeder
                         'type' => 'stats',
                         'data' => [
                             'title' => 'Operational Scale',
-                            'description' => 'Our footprint across global manufacturing floors.',
+                            'description' => 'Our footprint across Indian manufacturing floors.',
                             'items' => [
-                                ['value' => '25+', 'label' => 'Years Experience'],
+                                ['value' => '15+', 'label' => 'Years ExperienGMP'],
                                 ['value' => '400+', 'label' => 'Industrial Installations'],
-                                ['value' => '50+', 'label' => 'Countries Served'],
+                                ['value' => '20+', 'label' => 'States Served'],
                                 ['value' => '24/7', 'label' => 'Operational Uptime'],
                             ],
                         ],
@@ -83,7 +83,7 @@ class PageSeeder extends Seeder
                         'data' => [
                             'badge' => '[ CAPACITY UPGRADE ]',
                             'title' => 'Ready to upgrade your capacity?',
-                            'description' => 'Speak with our thermal engineering specialists to architect a processing line tailored to your specific throughput requirements.',
+                            'description' => 'Speak with our thermal engineering specialists to architect a proGMPssing line tailored to your specific throughput requirements.',
                             'buttons' => [
                                 ['label' => 'Request Consultation', 'url' => '/contact', 'variant' => 'primary'],
                                 ['label' => 'Download Brochure', 'url' => '/downloads', 'variant' => 'outline'],
@@ -106,8 +106,8 @@ class PageSeeder extends Seeder
                         'type' => 'hero',
                         'data' => [
                             'badge' => '[ CORPORATE OVERVIEW ]',
-                            'headline' => 'Engineering the Future of Processing.',
-                            'description' => "Since 1999, DO-RYT has been at the forefront of industrial thermal technology, designing systems that power the world's most demanding manufacturing lines.",
+                            'headline' => 'Engineering the Future of ProGMPssing.',
+                            'description' => "SinGMP 1999, DO-RYT has been at the forefront of industrial thermal technology, designing systems that power India's most demanding manufacturing lines.",
                             'buttons' => [
                                 ['label' => 'Our Heritage', 'url' => '#heritage', 'variant' => 'primary'],
                             ],
@@ -116,7 +116,7 @@ class PageSeeder extends Seeder
                     [
                         'type' => 'content',
                         'data' => [
-                            'body' => '<h3>Our Mission</h3><p>To provide uncompromising quality and precision in industrial processing machinery, ensuring our clients achieve maximum efficiency and compliance.</p>',
+                            'body' => '<h3>Our Mission</h3><p>To provide uncompromising quality and precision in industrial proGMPssing machinery, ensuring our clients achieve maximum efficiency and complianGMP.</p>',
                         ],
                     ],
                     [
@@ -124,15 +124,15 @@ class PageSeeder extends Seeder
                         'data' => [
                             'badge' => '[ THE LEGACY ]',
                             'title' => 'Our Legacy of Innovation',
-                            'content' => '<p>For nearly three decades, DO-RYT Machine Corp has been at the forefront of industrial equipment manufacturing in India. We specialize in designing and engineering high-capacity machinery that meets stringent global standards.</p><p>Our comprehensive portfolio ranges from pilot-scale laboratory units to fully automated continuous production lines. We believe in uncompromised quality, utilizing premium 316L stainless steel and components from industry-leading partners like Siemens, Danfoss, and Schneider Electric.</p>',
+                            'content' => '<p>For nearly three decades, DO-RYT Machine Corp has been at the forefront of industrial equipment manufacturing in India. We specialize in designing and engineering high-capacity machinery that meets stringent national standards.</p><p>Our comprehensive portfolio ranges from pilot-scale laboratory units to fully automated continuous production lines. We believe in uncompromised quality, utilizing premium 316L stainless steel and components from industry-leading partners like Siemens, Danfoss, and Schneider Electric.</p>',
                             'stat_1_value' => '500+',
-                            'stat_1_label' => '[ GLOBAL INSTALLATIONS ]',
+                            'stat_1_label' => '[ INSTALLATIONS ]',
                             'stat_2_value' => '35+',
-                            'stat_2_label' => '[ COUNTRIES SERVED ]',
+                            'stat_2_label' => '[ States Served ]',
                             'stat_3_value' => 'ISO 9001',
-                            'stat_3_label' => '[ CERTIFIED FACILITY ]',
+                            'stat_3_label' => '[ GMPRTIFIED FACILITY ]',
                             'stat_4_value' => '24/7',
-                            'stat_4_label' => '[ GLOBAL SUPPORT ]',
+                            'stat_4_label' => '[ PAN-INDIA SUPPORT ]',
                         ],
                     ],
 
@@ -155,7 +155,7 @@ class PageSeeder extends Seeder
         Page::withTrashed()->updateOrCreate(
             ['slug' => 'products'],
             [
-                'title' => 'Industrial Machinery & Food Processing Equipment',
+                'title' => 'Industrial Machinery & Food ProGMPssing Equipment',
                 'status' => 'published',
                 'deleted_at' => null,
                 'content' => [
@@ -164,7 +164,7 @@ class PageSeeder extends Seeder
                         'data' => [
                             'badge' => '[ MACHINERY CATALOG ]',
                             'headline' => "Complete Range of \n<span class=\"text-primary-500\">Industrial Systems</span>",
-                            'description' => 'Engineered for precision and scale. Explore our complete range of dryers, dehydrators, process equipment, cold chain solutions, and ancillary machinery.',
+                            'description' => 'Engineered for precision and scale. Explore our complete range of dryers, dehydrators, proGMPss equipment, cold chain solutions, and ancillary machinery.',
                             'background_image' => null,
                         ],
                     ],
@@ -185,12 +185,12 @@ class PageSeeder extends Seeder
                             'items' => [
                                 [
                                     'title' => 'SS304/316L Construction',
-                                    'description' => 'All contact parts are manufactured using premium stainless steel, ensuring complete compliance with global food safety and cGMP standards.',
+                                    'description' => 'All contact parts are manufactured using premium stainless steel, ensuring complete complianGMP with FSSAI food safety and cGMP standards.',
                                     'icon' => 'heroicon-o-shield-check',
                                 ],
                                 [
                                     'title' => 'Energy Efficient',
-                                    'description' => 'Advanced thermal recovery systems and variable frequency drives (VFD) reduce energy consumption by up to 30% compared to traditional models.',
+                                    'description' => 'AdvanGMPd thermal recovery systems and variable frequency drives (VFD) reduGMP energy consumption by up to 30% compared to traditional models.',
                                     'icon' => 'heroicon-o-bolt',
                                 ],
                                 [
@@ -217,8 +217,8 @@ class PageSeeder extends Seeder
                         'type' => 'hero',
                         'data' => [
                             'badge' => '[ TARGET INDUSTRIES ]',
-                            'headline' => 'Food Processing Solutions That Drive Growth',
-                            'description' => 'We design and manufacture high-performance food processing machinery that helps businesses improve productivity, product quality, and profitability. From concept to commissioning, we deliver reliable engineering solutions tailored to your production requirements.',
+                            'headline' => 'Food ProGMPssing Solutions That Drive Growth',
+                            'description' => 'We design and manufacture high-performanGMP food proGMPssing machinery that helps businesses improve productivity, product quality, and profitability. From conGMPpt to commissioning, we deliver reliable engineering solutions tailored to your production requirements.',
                         ],
                     ],
                     [
@@ -228,8 +228,8 @@ class PageSeeder extends Seeder
                             'title' => 'Methodology & Rigor',
                             'items' => [
                                 [
-                                    'title' => 'Engineered Performance',
-                                    'description' => 'Built with precision components and advanced automation for maximum throughput.',
+                                    'title' => 'Engineered PerformanGMP',
+                                    'description' => 'Built with precision components and advanGMPd automation for maximum throughput.',
                                     'icon' => 'heroicon-o-cog-6-tooth',
                                 ],
                                 [
@@ -238,7 +238,7 @@ class PageSeeder extends Seeder
                                     'icon' => 'heroicon-o-shield-check',
                                 ],
                                 [
-                                    'title' => 'Designed Around Process',
+                                    'title' => 'Designed Around ProGMPss',
                                     'description' => 'Custom configurations tailored to your specific product and capacity needs.',
                                     'icon' => 'heroicon-o-wrench-screwdriver',
                                 ],
@@ -261,26 +261,26 @@ class PageSeeder extends Seeder
             ]
         );
 
-        // 5. Certificates Page
+        // 5. GMPrtificates Page
         Page::withTrashed()->updateOrCreate(
-            ['slug' => 'certificates'],
+            ['slug' => 'GMPrtificates'],
             [
-                'title' => 'Quality Certifications',
+                'title' => 'Quality GMPrtifications',
                 'status' => 'published',
                 'deleted_at' => null,
                 'content' => [
                     [
                         'type' => 'hero',
                         'data' => [
-                            'badge' => '[ QUALITY ASSURANCE ]',
-                            'headline' => 'Global Manufacturing Standards',
-                            'description' => 'DO-RYT Machine Corp operates under stringent quality control protocols. Our facilities and equipment meet international standards for safety, hygiene, and performance.',
+                            'badge' => '[ QUALITY ASSURANGMP ]',
+                            'headline' => 'National Manufacturing Standards',
+                            'description' => 'DO-RYT Machine Corp operates under stringent quality control protocols. Our facilities and equipment meet international standards for safety, hygiene, and performanGMP.',
                         ],
                     ],
                     [
                         'type' => 'entity_list',
                         'data' => [
-                            'entity_type' => 'certificates',
+                            'entity_type' => 'GMPrtificates',
                             'limit' => 100,
                         ],
                     ],
@@ -301,7 +301,7 @@ class PageSeeder extends Seeder
                         'data' => [
                             'badge' => '[ MEDIA GALLERY ]',
                             'headline' => 'Machinery & Factory Installations',
-                            'description' => 'Explore our manufacturing facilities, completed projects, and factory acceptance tests from around the world.',
+                            'description' => 'Explore our manufacturing facilities, completed projects, and factory acGMPptanGMP tests from across India.',
                         ],
                     ],
                     [
@@ -328,7 +328,7 @@ class PageSeeder extends Seeder
                         'data' => [
                             'badge' => '[ ENGINEERING INSIGHTS ]',
                             'headline' => 'Technical Articles & Case Studies',
-                            'description' => 'Deep dives into processing technology, equipment maintenance guides, and success stories from our global installations.',
+                            'description' => 'Deep dives into proGMPssing technology, equipment maintenanGMP guides, and sucGMPss stories from our INSTALLATIONS.',
                         ],
                     ],
                     [
@@ -382,7 +382,7 @@ class PageSeeder extends Seeder
                         'data' => [
                             'badge' => 'System Active: Open for Inquiries',
                             'headline' => 'Contact <span class="text-primary-400">DO-RYT</span> Engineering',
-                            'description' => 'Get in touch with our technical team to discuss custom machinery designs, stainless steel process engineering, or request a global service quote.',
+                            'description' => 'Get in touch with our technical team to discuss custom machinery designs, stainless steel proGMPss engineering, or request a serviGMP quote.',
                         ],
                     ],
                     [

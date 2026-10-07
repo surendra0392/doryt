@@ -12,7 +12,7 @@ class SiteSettingSeeder extends Seeder
         $settings = [
             // General
             ['group' => 'general', 'key' => 'site_name', 'value' => 'DO-RYT Machine Corp', 'type' => 'string'],
-            ['group' => 'general', 'key' => 'site_description', 'value' => 'Engineering excellence in industrial processing machinery. Delivering premium quality systems to manufacturers worldwide.', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'site_description', 'value' => 'Engineering excellence in industrial processing machinery. Delivering premium quality systems to manufacturers across India.', 'type' => 'string'],
             ['group' => 'general', 'key' => 'primary_color', 'value' => '#27a74a', 'type' => 'string'],
             ['group' => 'general', 'key' => 'bg_main', 'value' => '#ffffff', 'type' => 'string'],
             ['group' => 'general', 'key' => 'bg_alt', 'value' => '#f3f4f6', 'type' => 'string'],

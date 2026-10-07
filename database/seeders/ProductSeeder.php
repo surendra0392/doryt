@@ -179,7 +179,7 @@ class ProductSeeder extends Seeder
                 'category_id' => $dryersCat->id,
                 'short_description' => 'High-speed spray drying systems for converting liquid feeds into free-flowing powders with precise particle size control.',
                 'full_description' => 'Spray Dryers atomize liquid feed into fine droplets within a heated drying chamber, producing uniform spherical powders in a single continuous step. Suitable for dairy, egg, pharmaceutical, and chemical powder production.',
-                'features' => ['Rotary / Nozzle Atomization', 'Precise Particle Size Control', 'Short Dwell Time', 'FDA / cGMP Compliant Options'],
+                'features' => ['Rotary / Nozzle Atomization', 'Precise Particle Size Control', 'Short Dwell Time', 'FSSAI / cGMP Compliant Options'],
                 'technical_specifications' => ['Evaporation Rate' => '50 – 5000 kg/h', 'Inlet Temperature' => '150°C – 250°C', 'Outlet Temperature' => '70°C – 110°C'],
                 'is_featured' => false,
                 'variants' => [
