@@ -1,4 +1,9 @@
 @import "tailwindcss";
+
+@source not "../../.agents";
+@source not "../../DEPLOYMENT.md";
+@source not "../../README.md";
+@source not "../../AGENTS.md";
 @plugin "@tailwindcss/typography";
 
 @theme {
